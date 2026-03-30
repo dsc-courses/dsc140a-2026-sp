@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "bayes error"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #032</h2>
+        <p>Tags: <a href='../tags/bayes error.html'>bayes error</a>, <a href='../tags/bayes classifier.html'>bayes classifier</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Shown below are two conditional densities, <span class="math">\(p_1(x \,|\, Y = 1)\)</span> and <span class="math">\(p_0(x \given Y = 0)\)</span>, describing the distribution of a continuous random variable <span class="math">\(X\)</span> for two classes: <span class="math">\(Y = 0\)</span>(the solid line) and <span class="math">\(Y = 1\)</span>(the dashed line). You may assume that both densities are piecewise constant.</p>
+<center><div class="image"><img src="../images/032/fig.png" /></div></center>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Suppose <span class="math">\(\pr(Y = 1) = 0.5\)</span> and <span class="math">\(\pr(Y = 0) = 0.5\)</span>. What is the prediction of the Bayes classifier at <span class="math">\(x = 1.5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0 (the solid class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1 (the dashed class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 0</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Suppose <span class="math">\(\pr(Y = 1) = 0.5\)</span> and <span class="math">\(\pr(Y = 0) = 0.5\)</span>. What is the Bayes error with respect to this distribution?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-190bb11c-6471-4ff2-97b3-f3fc3738b1c5" style="display: none">0.25</span>
+    <span id="button-190bb11c-6471-4ff2-97b3-f3fc3738b1c5">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-190bb11c-6471-4ff2-97b3-f3fc3738b1c5').style.display = 'inline-block';
+                document.getElementById('button-190bb11c-6471-4ff2-97b3-f3fc3738b1c5').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Now suppose <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the prediction of the Bayes classifier at <span class="math">\(x = 1.5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0 (the solid class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1 (the dashed class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 1</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Now suppose <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the Bayes error with respect to this distribution?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-999baab8-e5ba-4616-a3b5-26135ec71a55" style="display: none">0.29</span>
+    <span id="button-999baab8-e5ba-4616-a3b5-26135ec71a55">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-999baab8-e5ba-4616-a3b5-26135ec71a55').style.display = 'inline-block';
+                document.getElementById('button-999baab8-e5ba-4616-a3b5-26135ec71a55').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #047</h2>
+        <p>Tags: <a href='../tags/bayes error.html'>bayes error</a>, <a href='../tags/bayes classifier.html'>bayes classifier</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Suppose a particular probability distribution has the property that, whenever data are sampled from the distribution, the sampled data are guaranteed to be linearly separable. True or False: the Bayes error with respect to this distribution is 0\%.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Now consider a different probability distribution. Suppose the Bayes classifier achieves an error rate of 0\% on this distribution. True or False: given a finite data set sampled from this distribution, the data must be linearly separable.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #093</h2>
+        <p>Tags: <a href='../tags/bayes error.html'>bayes error</a>, <a href='../tags/bayes classifier.html'>bayes classifier</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Shown below are two conditional densities, <span class="math">\(p_1(x \,|\, Y = 1)\)</span> and <span class="math">\(p_0(x \given Y = 0)\)</span>, describing the distribution of a continuous random variable <span class="math">\(X\)</span> for two classes: <span class="math">\(Y = 0\)</span>(the solid line) and <span class="math">\(Y = 1\)</span>(the dashed line). You may assume that both densities are piecewise constant.</p>
+<center><div class="image"><img src="../images/093/fig.png" /></div></center>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is <span class="math">\(\pr(1 \leq X \leq 3 \given Y = 0)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-f07441dc-66fa-40af-b184-845ad36c971a" style="display: none">0.6</span>
+    <span id="button-f07441dc-66fa-40af-b184-845ad36c971a">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-f07441dc-66fa-40af-b184-845ad36c971a').style.display = 'inline-block';
+                document.getElementById('button-f07441dc-66fa-40af-b184-845ad36c971a').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Suppose <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is the prediction of the Bayes classifier at <span class="math">\(x = 2.5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0 (the solid class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1 (the dashed class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 0.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Suppose again that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is the Bayes error with respect to this distribution?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-b3d130f6-ae33-44da-b1be-5673c9f35ee6" style="display: none">0.30</span>
+    <span id="button-b3d130f6-ae33-44da-b1be-5673c9f35ee6">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-b3d130f6-ae33-44da-b1be-5673c9f35ee6').style.display = 'inline-block';
+                document.getElementById('button-b3d130f6-ae33-44da-b1be-5673c9f35ee6').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Now suppose <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the prediction of the Bayes classifier at <span class="math">\(x = 2.5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0 (the solid class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1 (the dashed class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 1.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 5)</h3>
+<p>Suppose again that <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the Bayes error with respect to this distribution?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-130f3df7-e526-46df-9b51-1e7725ff3ec8" style="display: none">0.27</span>
+    <span id="button-130f3df7-e526-46df-9b51-1e7725ff3ec8">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-130f3df7-e526-46df-9b51-1e7725ff3ec8').style.display = 'inline-block';
+                document.getElementById('button-130f3df7-e526-46df-9b51-1e7725ff3ec8').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/mczKmVUJauI</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #110</h2>
+        <p>Tags: <a href='../tags/bayes error.html'>bayes error</a>, <a href='../tags/bayes classifier.html'>bayes classifier</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Shown below are two conditional densities, <span class="math">\(p_1(x \,|\, Y = 1)\)</span> and <span class="math">\(p_0(x \given Y = 0)\)</span>, describing the distribution of a continuous random variable <span class="math">\(X\)</span> for two classes: <span class="math">\(Y = 0\)</span>(the solid line) and <span class="math">\(Y = 1\)</span>(the dashed line). You may assume that both densities are piecewise constant.</p>
+<center><div class="image"><img src="../images/110/fig.png" /></div></center>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Suppose that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is <span class="math">\(\pr(1 \leq X \leq 3)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-6081870b-b25b-459b-a311-172365c0f6ad" style="display: none">0.3</span>
+    <span id="button-6081870b-b25b-459b-a311-172365c0f6ad">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-6081870b-b25b-459b-a311-172365c0f6ad').style.display = 'inline-block';
+                document.getElementById('button-6081870b-b25b-459b-a311-172365c0f6ad').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Suppose <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is the prediction of the Bayes classifier at <span class="math">\(x = 1.5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0 (the solid class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1 (the dashed class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 0.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Suppose again that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is the Bayes error with respect to this distribution?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-6fd92f9c-7e6c-4247-81d1-1896fa5071c5" style="display: none">0.25</span>
+    <span id="button-6fd92f9c-7e6c-4247-81d1-1896fa5071c5">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-6fd92f9c-7e6c-4247-81d1-1896fa5071c5').style.display = 'inline-block';
+                document.getElementById('button-6fd92f9c-7e6c-4247-81d1-1896fa5071c5').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Now suppose <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is <span class="math">\(\pr(1 \leq X \leq 3)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-c62fd17a-58cc-4809-9a38-e00660fff66b" style="display: none">0.34</span>
+    <span id="button-c62fd17a-58cc-4809-9a38-e00660fff66b">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-c62fd17a-58cc-4809-9a38-e00660fff66b').style.display = 'inline-block';
+                document.getElementById('button-c62fd17a-58cc-4809-9a38-e00660fff66b').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 5)</h3>
+<p>Suppose again that <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the prediction of the Bayes classifier at <span class="math">\(x = 1.5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0 (the solid class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1 (the dashed class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 1.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 6)</h3>
+<p>Suppose again that <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the Bayes error with respect to this distribution?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-6f54cb4f-4efb-45bd-abe1-863b607ddf0a" style="display: none">0.28</span>
+    <span id="button-6f54cb4f-4efb-45bd-abe1-863b607ddf0a">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-6f54cb4f-4efb-45bd-abe1-863b607ddf0a').style.display = 'inline-block';
+                document.getElementById('button-6f54cb4f-4efb-45bd-abe1-863b607ddf0a').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #116</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/bayes error.html'>bayes error</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose that, in a binary classification setting, the true underlying class-conditional densities <span class="math">\(p(\vec x \given Y=0)\)</span> and <span class="math">\(p(\vec x \given
+    Y=1)\)</span> are known to each be multivariate Gaussians with full covariance matrices. Suppose, also, that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = \frac{1}{2}\)</span>.</p>
+<p>True or False: it is possible that the Bayes error in this case is exactly zero.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

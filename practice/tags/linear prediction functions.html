@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "linear prediction functions"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #002</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction rule <span class="math">\(H(\vec x; \vec w) = \Aug(\vec x) \cdot\vec w\)</span> is parameterized by the weight vector <span class="math">\(\vec w = (3, -2, 5, 2)^T\)</span>. Let <span class="math">\(\vec z = (1, -1, -2)^T\)</span>. What is <span class="math">\(H(\vec z)\)</span>?</p>
+<details>
+    <summary>Solution</summary>
+<p>-8</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #004</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear predictor <span class="math">\(H_1\)</span> is fit on a data set <span class="math">\(X = \{\nvec{x}{i}, y_i\}\)</span> of <span class="math">\(n\)</span> points by minimizing the mean squared error, where each <span class="math">\(\nvec{x}{i}\in\mathbb
+    R^d\)</span>.</p>
+<p>Let <span class="math">\(Z = \{\nvec{z}{i}, y_i\}\)</span> be the data set obtained from the original by standardizing each feature. That is, if a matrix were created with the <span class="math">\(i\)</span>th row being <span class="math">\(\nvec{z}{i}\)</span>, then the mean of each column would be zero, and the variance would be one.</p>
+<p>Suppose a linear predictor <span class="math">\(H_2\)</span> is fit on this standardized data by minimizing the mean squared error.</p>
+<p>True or False: <span class="math">\(H_1(\nvec{x}{i}) = H_2(\nvec{z}{i})\)</span> for each <span class="math">\(i = 1, \ldots, n\)</span>.</p>
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #006</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\nvec{x}{1} = (-1, -1)^T\)</span>, <span class="math">\(\nvec{x}{2} = (1, 1)^T\)</span>, and <span class="math">\(\nvec{x}{3}
+    = (-1, 1)^T\)</span>. Suppose <span class="math">\(H\)</span> is a linear prediction function, and that <span class="math">\(H(\nvec{x}{1}) = 2\)</span> while <span class="math">\(H(\nvec{x}{2}) = -2\)</span> and <span class="math">\(H(\nvec{x}{3}) = 0\)</span>.</p>
+<p>Let <span class="math">\(\nvec{x}{4} = (1,-1)^T\)</span>. What is <span class="math">\(H(\nvec{x}{4})\)</span>?</p>
+<details>
+    <summary>Solution</summary>
+<p>0</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #019</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction rule <span class="math">\(H(\vec x; \vec w) = \Aug(\vec x) \cdot\vec w\)</span> is parameterized by the weight vector <span class="math">\(\vec w = (2, 1, -3, 4)^T\)</span>. Let <span class="math">\(\vec z = (3, -2, 1)^T\)</span>. What is <span class="math">\(H(\vec z)\)</span>?</p>
+<details>
+    <summary>Solution</summary>
+<p>15</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #023</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\nvec{x}{1} = (-1, -1)^T\)</span>, <span class="math">\(\nvec{x}{2} = (1, 1)^T\)</span>, and <span class="math">\(\nvec{x}{3}
+    = (-1,1)^T\)</span>. Suppose <span class="math">\(H\)</span> is a linear prediction function, and that <span class="math">\(H(\nvec{x}{1}) = 2\)</span>, <span class="math">\(H(\nvec{x}{2}) = -2\)</span>, and <span class="math">\(H(\nvec{x}{3}) = 2\)</span>.</p>
+<p>Let <span class="math">\(\vec z = (2,-1)^T\)</span>. What is <span class="math">\(H(\vec z)\)</span>?</p>
+<details>
+    <summary>Solution</summary>
+<p>-4</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #060</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction function <span class="math">\(H(\vec x) = w_0 + w_1 x_1 + w_2 x_2\)</span> is trained to perform classification, and the weight vector is found to be <span class="math">\(\vec w = (2, -1, 2)^T\)</span>.</p>
+<p>The figure below shows four possible decision boundaries: <span class="math">\(A\)</span>, <span class="math">\(B\)</span>, <span class="math">\(C\)</span>, and <span class="math">\(D\)</span>. Which of them is the decision boundary of the prediction function <span class="math">\(H\)</span>?</p>
+<p>You may assume that each grid square is 1 unit on each side, and the axes are drawn to show you where the origin is.</p>
+<center><div class="image"><img src="../images/060/boundaries.png" /></div></center>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>B</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>C</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>D</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>B.</p>
+<p>Here are four ways to solve this problem:</p>
+<p><b>Method 1: Guess and check, using the fact that $H(\vec x)$ must equal zero at every point along the decision boundary.</b> For any of the proposed decision boundaries, we can take a point on the boundary, compute <span class="math">\(H(\vec x)\)</span>, and see if it equals 0.</p>
+<p>Consider option <span class="math">\(A\)</span>, and take an arbitrary point on that boundar -- for example, the point <span class="math">\((1, 1)^T\)</span>. Computing <span class="math">\(H(\vec x)\)</span>, we get <span class="math">\(H(\vec x) = \vec w
+        \cdot\operatorname{Aug}(\vec x) = (2, -1, 2) \cdot(1, 1, 1) = 3 \neq
+        0\)</span>. Therefore, this cannot be the decision boundary.</p>
+<p>Considering option <span class="math">\(B\)</span>, it looks like the point <span class="math">\((0, -1)^T\)</span> is on the boundary, Computing the value of <span class="math">\(H\)</span> here, we get <span class="math">\(H(\vec x) = \vec w
+        \cdot\operatorname{Aug}(\vec x) = (2, -1, 2) \cdot(1, -1, 1) = 0\)</span>. That's a good sign, but it's not sufficient to say that this must be the decision boundary (at this point, all we can say is that whatever the decision boundary is, it must go through <span class="math">\((0, -1)\)</span>.) To make sure, we pick a second point on the boundary, say, <span class="math">\((2, 0)^T\)</span>. Computing <span class="math">\(H\)</span> at this point, we get <span class="math">\(H(\vec x) = \vec w \cdot\operatorname{Aug}(\vec
+        x) = (2, -1, 2) \cdot(1, 2, 0) = 0\)</span>. With this, we can conclude that <span class="math">\(B\)</span> must be the decision boundary.</p>
+<p><b>Method 2: Use the fact that $(w_1, w_2)$ is orthogonal to the decision boundary.</b> In Homework 02, we learned a useful way of relating the decision boundary to the weight vector <span class="math">\(\vec w = (w_0, w_1, w_2)^T\)</span>: it is orthogonal to the vector <span class="math">\(\vec w' = (w_1, w_2)^T\)</span>.</p>
+<p>In this case, <span class="math">\(\vec w' = (-1, 2)^T\)</span>; this is a vector that up and to the left (more up than left). This rules out options <span class="math">\(A\)</span> and <span class="math">\(D\)</span>, since they can't be orthogonal to that vector. There are several ways to decide between <span class="math">\(B\)</span> and <span class="math">\(C\)</span>, including the logic from Method 1.</p>
+<p><b>Method 3: Find the equation of the decision boundary in $y = mx + b$ form.</b> Another way to solve this problem is to find the equation of the decision boundary in familiar ``<span class="math">\(y = mx + b\)</span>'' form. We can do this by setting <span class="math">\(H(\vec x) = 0\)</span> and solving for <span class="math">\(x_2\)</span> in terms of <span class="math">\(x_1\)</span>. We get:</p>
+<div class="math">\[\begin{align*}
+            &H(\vec x) =0\\
+            &\implies
+            w_0 + w_1 x_1 + w_2 x_2 = 0\\
+            &\implies
+            w_2 x_2 = -w_0 - w_1 x_1\\
+            &\implies
+            x_2 = -\frac{w_0}{w_2} - \frac{w_1}{w_2} x_1
+        \end{align*}\]</div>
+<p>Plugging in <span class="math">\(w_0 = 2\)</span>, <span class="math">\(w_1 = -1\)</span>, and <span class="math">\(w_2 = 2\)</span>, we get</p>
+<div class="math">\[\begin{align*}
+            &x_2 = -\frac{2}{2} + \frac{-1}{2} x_1\\
+            &\implies
+            x_2 = -1 - \frac{1}{2} x_1
+        \end{align*}\]</div>
+<p>So the decision boundary is a line with slope <span class="math">\(-\frac{1}{2}\)</span> and <span class="math">\(y\)</span>-intercept <span class="math">\(-1\)</span>. This is exactly the equation of the line in option <span class="math">\(B\)</span>.</p>
+<p><b>Method 4: reasoning about the slope in each coordinate.</b> Similar to Method 2, we can rule out options <span class="math">\(A\)</span> and <span class="math">\(D\)</span> by reasoning about the slope of the decision boundary in each coordinate.</p>
+<p>Imagine this scenario: you're standing on the surface of <span class="math">\(H\)</span> at a point where <span class="math">\(H = 0\)</span>(that is, you're on the decision boundary). You will take one step to the right (i.e., one step in the <span class="math">\(x_1\)</span> direction), which will (in general) cause you to leave the decision boundary and either increase or decrease in height. If you want to get back to the decision boundary, and your next step must be either up or down, which should it be? The answer will tell you whether the decision boundary looks like <span class="math">\(/\)</span> or like <span class="math">\(\backslash\)</span>.</p>
+<p>In this case, taking a step to the right (in the <span class="math">\(x_1\)</span> direction) will cause you to <i>decrease</i> in height. This is because the <span class="math">\(w_1\)</span> component of <span class="math">\(\vec w\)</span> is negative, and so increasing <span class="math">\(x_1\)</span> will decrease <span class="math">\(H\)</span>. Now, to get back to the decision boundary, you must <i>increase</i> your height to get back to <span class="math">\(H = 0\)</span>. Since the slope in the <span class="math">\(x_2\)</span> direction is positive (2, to be exact), you must <i>increase</i><span class="math">\(x_2\)</span> in order to increase <span class="math">\(H\)</span>. Therefore, the decision boundary is up and to the right: it looks like <span class="math">\(/\)</span>.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #061</h2>
+        <p>Tags: <a href='../tags/feature maps.html'>feature maps</a>, <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction function <span class="math">\(H(\vec x) = w_1 \phi_1(\vec x) + w_2
+    \phi_2(\vec x) + w_3 \phi_3(\vec x) + w_4 \phi_4(\vec x)\)</span> is fit using the basis functions</p>
+<div class="math">\[\phi_1(\vec x) = 1, \quad\phi_2(\vec x) = x_1^2, \quad\phi_3(\vec x) = x_2^2, \quad\phi_4(\vec x) = x_1 x_2,
+    \]</div>
+<p>where <span class="math">\(\vec x = (x_1, x_2)^T\)</span> is a feature vector in <span class="math">\(\mathbb R^2\)</span>. The weight vector <span class="math">\(\vec w\)</span> is found to be <span class="math">\(\vec w = (1, -2, 3, -4)^T\)</span>.</p>
+<p>Let <span class="math">\(\vec x = (1, 2)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-fa58eadf-5ba0-46a9-9dba-6ff9ad8929fe" style="display: none">3</span>
+    <span id="button-fa58eadf-5ba0-46a9-9dba-6ff9ad8929fe">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-fa58eadf-5ba0-46a9-9dba-6ff9ad8929fe').style.display = 'inline-block';
+                document.getElementById('button-fa58eadf-5ba0-46a9-9dba-6ff9ad8929fe').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+<details>
+    <summary>Solution</summary>
+<p>We have:</p>
+<div class="math">\[\begin{align*}
+            H(\vec x) &= w_1 \phi_1(\vec x) + w_2 \phi_2(\vec x) + w_3 \phi_3(\vec x) + w_4 \phi_4(\vec x) \\
+            &= 1 \times 1 + (-2) \times x_1^2 + 3 \times x_2^2 + (-4) \times x_1 \times x_2 \\
+            &= 1 \times 1 + (-2) \times 1^2 + 3 \times 2^2 + (-4) \times 1 \times 2 \\
+            &= 1 - 2 + 12 - 8 = 3.
+        \end{align*}\]</div>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #063</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction function <span class="math">\(H(\vec x) = w_0 + w_1 x_1 + w_2 x_2\)</span> is fit to data and the following are observed:</p>
+<p>At a point, <span class="math">\(\nvec{x}{1} = (1, 1)^T\)</span>, the value of <span class="math">\(H\)</span> is 4.</p>
+<p>At a point, <span class="math">\(\nvec{x}{2} = (1, 0)^T\)</span>, the value of <span class="math">\(H\)</span> is 0.</p>
+<p>At a point, <span class="math">\(\nvec{x}{3} = (0, 0)^T\)</span>, the value of <span class="math">\(H\)</span> is -4.</p>
+<p>What is the value of <span class="math">\(H\)</span> at the point <span class="math">\(\nvec{x}{4} = (0, 1)^T\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-91ec6879-0d39-4699-b26d-c7951a8425ec" style="display: none">0</span>
+    <span id="button-91ec6879-0d39-4699-b26d-c7951a8425ec">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-91ec6879-0d39-4699-b26d-c7951a8425ec').style.display = 'inline-block';
+                document.getElementById('button-91ec6879-0d39-4699-b26d-c7951a8425ec').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+<details>
+    <summary>Solution</summary>
+<p>The four points make a square:</p>
+<center><div class="image"><img src="../images/063/square.png" /></div></center>
+<p>Since <span class="math">\(H = 0\)</span> at <span class="math">\(\nvec{x}{2}\)</span>, the decision boundary must pass through that point. And since <span class="math">\(H(\nvec{x}{1}) = 4 = -H(\nvec{x}{3})\)</span>, the points <span class="math">\(\nvec{x}{1}\)</span> and <span class="math">\(\nvec{x}{3}\)</span> are equidistant from the decision boundary. Therefore, the decision boundary must pass exactly halfway between <span class="math">\(\nvec{x}{1}\)</span> and <span class="math">\(\nvec{x}{3}\)</span>. This makes a line going through <span class="math">\(\nvec{x}{4}\)</span>, meaning that <span class="math">\(\nvec{x}{4}\)</span> is on the decision boundary, so <span class="math">\(H(\nvec{x}{4}) = 0\)</span>.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #078</h2>
+        <p>Tags: <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction function <span class="math">\(H(\vec x) = w_0 + w_1 x_1 + w_2 x_2\)</span> is trained to perform classification, and the weight vector is found to be <span class="math">\(\vec w = (1,-2,1)^T\)</span>.</p>
+<p>The figure below shows four possible decision boundaries: <span class="math">\(A\)</span>, <span class="math">\(B\)</span>, <span class="math">\(C\)</span>, and <span class="math">\(D\)</span>. Which of them is the decision boundary of the prediction function <span class="math">\(H\)</span>?</p>
+<p>You may assume that each grid square is 1 unit on each side, and the axes are drawn to show you where the origin is.</p>
+<center><div class="image"><img src="../images/078/boundaries.png" /></div></center>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>B</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>C</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>D</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>D.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #079</h2>
+        <p>Tags: <a href='../tags/feature maps.html'>feature maps</a>, <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a linear prediction function <span class="math">\(H(\vec x) = w_1 \phi_1(\vec x) + w_2
+    \phi_2(\vec x) + w_3 \phi_3(\vec x) + w_4 \phi_4(\vec x)\)</span> is fit using the basis functions</p>
+<div class="math">\[\phi_1(\vec x) = 1, \quad\phi_2(\vec x) = x_1 x_2, \quad\phi_3(\vec x) = x_2 x_3, \quad\phi_4(\vec x) = x_1 x_3,
+    \]</div>
+<p>where <span class="math">\(\vec x = (x_1, x_2, x_3)^T\)</span> is a feature vector in <span class="math">\(\mathbb R^3\)</span>. The weight vector <span class="math">\(\vec w\)</span> is found to be <span class="math">\(\vec w = (2, 1, -2, -3)^T\)</span>.</p>
+<p>Let <span class="math">\(\vec x = (1, 2, 1)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e0a6eb75-67cd-4b59-a8e2-d2c01b54e4ec" style="display: none"><span class="math">\(-3\)</span></span>
+    <span id="button-e0a6eb75-67cd-4b59-a8e2-d2c01b54e4ec">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e0a6eb75-67cd-4b59-a8e2-d2c01b54e4ec').style.display = 'inline-block';
+                document.getElementById('button-e0a6eb75-67cd-4b59-a8e2-d2c01b54e4ec').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #080</h2>
+        <p>Tags: <a href='../tags/least squares.html'>least squares</a>, <a href='../tags/linear prediction functions.html'>linear prediction functions</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the binary classification data set shown below consisting of six points in <span class="math">\(\mathbb R^2\)</span>. Each point has an associated label of either +1 or -1.</p>
+<center><div class="image"><img src="../images/080/data.png" /></div></center>
+<p>What is the mean squared error of a least squares classifier trained on this data set (without regularization)? Your answer should be a number.</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-65a5cab6-229c-45f3-808a-b602b3acc24e" style="display: none">0</span>
+    <span id="button-65a5cab6-229c-45f3-808a-b602b3acc24e">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-65a5cab6-229c-45f3-808a-b602b3acc24e').style.display = 'inline-block';
+                document.getElementById('button-65a5cab6-229c-45f3-808a-b602b3acc24e').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

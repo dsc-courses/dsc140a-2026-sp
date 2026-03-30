@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "gradients"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #009</h2>
+        <p>Tags: <a href='../tags/gradient descent.html'>gradient descent</a>, <a href='../tags/perceptrons.html'>perceptrons</a>, <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose gradient descent is to be used to train a perceptron classifier <span class="math">\(H(\vec x; \vec w)\)</span> on a data set of <span class="math">\(n\)</span> points, <span class="math">\(\{\nvec{x}{i}, y_i \}\)</span>. Recall that each iteration of gradient descent takes a step in the opposite direction of the ``gradient''.</p>
+<p>Which gradient is being referred to here?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the empirical risk with respect to <span class="math">\(\vec w\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the empirical risk with respect to <span class="math">\(\nvec{x}{i}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the perceptron loss with respect to <span class="math">\(\vec w\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the perceptron loss with respect to <span class="math">\(\nvec{x}{i}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of <span class="math">\(H\)</span> with respect to <span class="math">\(\vec w\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of <span class="math">\(H\)</span> with respect to <span class="math">\(\vec x\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>The gradient of the empirical risk with respect to <span class="math">\(\vec w\)</span></p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #017</h2>
+        <p>Tags: <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(f(\vec w) = \vec a \cdot\vec w + \lambda\|\vec w \|^2\)</span>, where <span class="math">\(\vec w \in\mathbb R^d\)</span>, <span class="math">\(\vec a \in\mathbb R^d\)</span>, and <span class="math">\(\lambda > 0\)</span>.</p>
+<p>What is the minimizer of <span class="math">\(f\)</span>? State your answer in terms of <span class="math">\(\vec a\)</span> and <span class="math">\(\lambda\)</span>.</p>
+<details>
+    <summary>Solution</summary>
+<p><span class="math">\(\vec w^* = -\frac{\vec{a}}{2\lambda}\)</span></p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #072</h2>
+        <p>Tags: <a href='../tags/perceptrons.html'>perceptrons</a>, <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a perceptron classifier <span class="math">\(H(\vec x) = \vec w \cdot\vec x\)</span> is trained on the data shown below. The points marked with ``+'' have label +1, while the ``<span class="math">\(\circ\)</span>'' points have label -1. The perceptron's decision boundary is plotted as a thick solid line.</p>
+<center><div class="image"><img src="../images/072/data.png" /></div></center>
+<p>Let <span class="math">\(R(\vec w)\)</span> be the risk with respect to the perceptron loss function, and let <span class="math">\(\vec w^*\)</span> be the weight vector whose corresponding decision boundary is shown above.</p>
+<p>True or False: the gradient of <span class="math">\(R\)</span> evaluated at <span class="math">\(\vec w^*\)</span> is <span class="math">\(\vec 0\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #074</h2>
+        <p>Tags: <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be vectors in <span class="math">\(\mathbb R^d\)</span> and let <span class="math">\(\vec w\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span>. Consider the function:</p>
+<div class="math">\[
+        f(\vec w) = \sum_{i=1}^n \vec w \cdot\nvec{x}{i} + \|\vec w \|^2,
+    \]</div>
+<p>What is <span class="math">\(\frac{d}{d \vec w} f(\vec w)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-90c32ddb-59c0-4559-8c78-ac166ac7bef0" style="display: none"><span class="math">\(\sum_{i=1}^n \nvec{x}{i} + 2 \vec w\)</span></span>
+    <span id="button-90c32ddb-59c0-4559-8c78-ac166ac7bef0">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-90c32ddb-59c0-4559-8c78-ac166ac7bef0').style.display = 'inline-block';
+                document.getElementById('button-90c32ddb-59c0-4559-8c78-ac166ac7bef0').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+<details>
+    <summary>Solution</summary>
+<div class="math">\[\begin{align*}
+            \frac{d}{d \vec w}
+            \sum_{i=1}^n \vec w \cdot \nvec{x}{i} + \| \vec w \|^2
+            &=
+            \frac{d}{d \vec w}
+            \sum_{i=1}^n \vec w \cdot \nvec{x}{i} + 
+            \frac{d}{d \vec w}
+            \| \vec w \|^2
+            \\
+            &=
+            \sum_{i=1}^n 
+            \frac{d}{d \vec w}
+            \vec w \cdot \nvec{x}{i}
+            +
+            \frac{d}{d \vec w}
+            \| \vec w \|^2
+            \\
+            &=
+            \sum_{i=1}^n 
+            \nvec{x}{i}
+            +
+            \frac{d}{d \vec w}
+            \vec w^T \vec w
+            \\
+            &=
+            \sum_{i=1}^n 
+            \nvec{x}{i}
+            +
+            2
+            \vec w
+        \end{align*}\]</div>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #084</h2>
+        <p>Tags: <a href='../tags/subgradients.html'>subgradients</a>, <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following piecewise function that is linear in each quadrant:</p>
+<div class="math">\[
+        f(x_1, x_2) = \begin{cases}
+            -2x_1, & \text{if } x_1 < 0 \text{ and } x_2 < 0,\\ % southwest
+            -2x_1 + 3x_2, & \text{if } x_1 < 0 \text{ and } x_2 \geq 0,\\ % northwest
+            -x_1  & \text{if } x_1 \geq 0 \text{ and } x_2 < 0,\\ % southeast
+            -x_1 + 3x_2, & \text{if } x_1 \geq 0 \text{ and } x_2 \geq 0,\\ % northeast
+        \end{cases}\]</div>
+<p>For convenience, a plot of this function is shown below:</p>
+<center><div class="image"><img src="../images/084/plot.png" /></div></center>
+<p>Note that the plot isn't intended to be precise enough to read off exact values, but it might help give you a sense of the function's behavior. In principle, you can do this question using only the piecewise definition of <span class="math">\(f\)</span> given above.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the gradient of this function at the point <span class="math">\((1, 1)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-a3579067-8e24-418f-a3b3-fdeeee6030c6" style="display: none"><span class="math">\((-1,3)^T\)</span></span>
+    <span id="button-a3579067-8e24-418f-a3b3-fdeeee6030c6">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-a3579067-8e24-418f-a3b3-fdeeee6030c6').style.display = 'inline-block';
+                document.getElementById('button-a3579067-8e24-418f-a3b3-fdeeee6030c6').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the gradient of this function at the point <span class="math">\((-1, -1)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-459b39d8-c873-4d38-9d2f-d440008e70fd" style="display: none"><span class="math">\((-2,0)^T\)</span></span>
+    <span id="button-459b39d8-c873-4d38-9d2f-d440008e70fd">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-459b39d8-c873-4d38-9d2f-d440008e70fd').style.display = 'inline-block';
+                document.getElementById('button-459b39d8-c873-4d38-9d2f-d440008e70fd').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Which of the below are valid <i>sub</i>gradients of the function at the point <span class="math">\((0,-2)\)</span>? Select all that apply.</p>
+<div class="multiple-select"><div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((-2, 0)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((1, 1)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((-1.5, 0)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((1, 3)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((0, 0)^T\)</span></p></label></div></div>
+<details>
+    <summary>Solution</summary>
+<p><span class="math">\((-2, 0)^T\)</span> and <span class="math">\((-1.5, 0)^T\)</span> are valid subgradients.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Which of the below are valid <i>sub</i>gradients of the function at the point <span class="math">\((0,0)\)</span>? Select all that apply.</p>
+<div class="multiple-select"><div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((0, 2)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((-1, 3)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((-2, 0)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((-1, 2)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((0, 0)^T\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="checkbox" /><p><span class="math">\((0, -1)^T\)</span></p></label></div></div>
+<details>
+    <summary>Solution</summary>
+<p><span class="math">\((-1, 3)^T\)</span>, <span class="math">\((-2, 0)^T\)</span>, and <span class="math">\((-1, 2)^T\)</span> are valid subgradients.</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #089</h2>
+        <p>Tags: <a href='../tags/SVMs.html'>SVMs</a>, <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set shown below. The points marked with ``+'' have label +1, while the ``<span class="math">\(\circ\)</span>'' points have label -1. Shown are the places where a linear prediction function <span class="math">\(H\)</span> is equal to zero (the thick solid line), 1, and -1 (the dotted lines). Each cell of the grid is 1 unit by 1 unit. The origin is not specified (it is not necssary to know the absolute coordinates of any points for this problem).</p>
+<center><div class="image"><img src="../images/089/data.png" /></div></center>
+<p>Let <span class="math">\(\vec w'\)</span> be the parameter vector corresponding to prediction function <span class="math">\(H\)</span> shown above. Let <span class="math">\(R(\vec w)\)</span> be the risk with respect to the hinge loss on this data. True or False: the gradient of <span class="math">\(R\)</span> evaluated at <span class="math">\(\vec w'\)</span> is <span class="math">\(\vec 0\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #090</h2>
+        <p>Tags: <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\vec x, \vec\mu,\)</span> and <span class="math">\(\vec b\)</span> be vectors in <span class="math">\(\mathbb R^n\)</span>, and let <span class="math">\(A\)</span> be a symmetric <span class="math">\(n \times n\)</span> matrix. Consider the function:</p>
+<div class="math">\[
+        f(\vec x) = \vec x^T A \vec x + (\vec x - \vec\mu) \cdot\vec b
+    \]</div>
+<p>What is <span class="math">\(\frac{d}{d \vec x} f(\vec x)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-9078c537-6987-4b61-b444-85b348ea58d8" style="display: none"><span class="math">\(2 A \vec x + \vec b\)</span></span>
+    <span id="button-9078c537-6987-4b61-b444-85b348ea58d8">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-9078c537-6987-4b61-b444-85b348ea58d8').style.display = 'inline-block';
+                document.getElementById('button-9078c537-6987-4b61-b444-85b348ea58d8').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

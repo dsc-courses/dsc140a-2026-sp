@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "covariance"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #038</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb R^d\)</span>, <span class="math">\(\nvec{x}{1}, \ldots,
+    \nvec{x}{n}\)</span>. Suppose the data are standardized, creating a set of new points <span class="math">\(\nvec{z}{1}, \ldots, \nvec{z}{n}\)</span>. That is, if the new points are stacked into an <span class="math">\(n \times d\)</span> matrix, <span class="math">\(Z\)</span>, the mean and variance of each column of <span class="math">\(Z\)</span> would be zero and one, respectively.</p>
+<p>True or False: the covariance matrix of the standardized data must be the <span class="math">\(d\times d\)</span> identity matrix; that is, the <span class="math">\(d \times d\)</span> matrix with ones along the diagonal and zeros off the diagonal.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #041</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a data set consists of the following three measurements for each Saturday last year: <span class="math">\(X_1\)</span>: The day's high temperature <span class="math">\(X_2\)</span>: The number of people at Pacific Beach on that day <span class="math">\(X_3\)</span>: The number of people wearing coats on that day</p>
+<p>Suppose the covariance between these features is calculated and placed into a <span class="math">\(3 \times 3\)</span> sample covariance matrix, <span class="math">\(C\)</span>. Which of the below options most likely shows the sign of each entry of the sample covariance matrix?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} + & + & + \\ + & + & + \\ + & + & + \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} + & + & - \\ + & + & - \\ - & - & + \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} + & + & - \\ + & + & - \\ - & - & - \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} - & + & + \\ + & - & + \\ + & + & - \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} - & - & - \\ - & - & - \\ - & - & - \end{pmatrix}\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>The second option.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #042</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose we have two data sets, <span class="math">\(\mathcal{D}_1\)</span> and <span class="math">\(\mathcal{D}_2\)</span>, each containing <span class="math">\(n/2\)</span> points in <span class="math">\(\mathbb R^d\)</span>. Let <span class="math">\(\nvec{\mu}{1}\)</span> and <span class="math">\(C^{(1)}\)</span> be the mean and sample covariance matrix of <span class="math">\(\mathcal{D}_1\)</span>, and let <span class="math">\(\nvec{\mu}{2}\)</span> and <span class="math">\(C^{(2)}\)</span> be the mean and sample covariance matrix of <span class="math">\(\mathcal{D}_2\)</span>.</p>
+<p>Suppose the two data sets are combined into a single data set <span class="math">\(\mathcal D\)</span> containing <span class="math">\(n\)</span> points.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>True or False: the mean of the combined data <span class="math">\(\mathcal{D}\)</span> is equal to <span class="math">\(\displaystyle\frac{\nvec{\mu}{1} + \nvec{\mu}{2}}{2}\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>True or False: the sample covariance matrix of the combined data <span class="math">\(\mathcal{D}\)</span> is equal to <span class="math">\(\displaystyle\frac{C^{(1)} + C^{(2)}}{2}\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #043</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a random vector <span class="math">\(\vec X = (X_1, X_2)\)</span> has a multivariate Gaussian distribution. Suppose it is known that known that <span class="math">\(X_1\)</span> and <span class="math">\(X_2\)</span> are independent.</p>
+<p>Let <span class="math">\(C\)</span> be the Gaussian distribution's covariance matrix.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>True or False: <span class="math">\(C\)</span> must be diagonal.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>True or False: each entry of <span class="math">\(C\)</span> must the same.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #052</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\mathcal D\)</span> be a set of data points in <span class="math">\(\mathbb R^d\)</span>, and let <span class="math">\(C\)</span> be the sample covariance matrix of <span class="math">\(\mathcal D\)</span>. Suppose each point in the data set is shifted in the same direction and by the same amount. That is, suppose there is a vector <span class="math">\(\vec\delta\)</span> such that if <span class="math">\(\nvec{x}{i}\in\mathcal D\)</span>, then <span class="math">\(\nvec{x}{i} + \vec\delta\)</span> is in the new data set.</p>
+<p>True or False: the sample covariance matrix of the new data set is equal to <span class="math">\(C\)</span>(the sample covariance matrix of the original data set).</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #055</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set <span class="math">\(\mathcal D\)</span> shown below.</p>
+<center><div class="image"><img src="../images/055/data.png" /></div></center>
+<p>What will be the sign of the <span class="math">\((1,2)\)</span> entry of the data's sample covariance matrix?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>+</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>-</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>the entry will be zero</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>The sign will be negative.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #103</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(\mathcal{X}\)</span> be a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>, and let <span class="math">\(\vec\alpha\)</span> be the solution to the kernel ridge regression dual problem. What type of object is <span class="math">\(\vec\alpha\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>B.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Suppose <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> is a set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>, <span class="math">\(y_1, \ldots, y_n\)</span> is a set of <span class="math">\(n\)</span> labels (each either <span class="math">\(-1\)</span> or <span class="math">\(1\)</span>), <span class="math">\(\vec w\)</span> is a <span class="math">\(k\)</span>-dimensional vector, and <span class="math">\(\lambda\)</span> is a scalar.</p>
+<p>Let <span class="math">\(\vec\phi : \mathbb{R}^d \to\mathbb{R}^k\)</span> be a feature map.</p>
+<p>What type of object is the following?</p>
+<div class="math">\[\sum_{i=1}^n
+                \left(                    -\frac{1}{n \lambda}\vec\phi(\nvec{x}{i}) \cdot\vec w
+                    - y_i
+                \right)\vec\phi(\nvec{x}{i})
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(k\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>D.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be a set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>. Let <span class="math">\(\vec\mu = \sum_{i=1}^n \nvec{x}{i}\)</span> be the mean of the data set, and let <span class="math">\(C\)</span> be the sample covariance matrix.</p>
+<p>What type of object is the following?</p>
+<div class="math">\[
+                -\frac{1}{2}(\nvec{x}{1} - \vec\mu)^T C^{-1}(\nvec{x}{1} - \vec\mu)
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span> sampled from a multivariate Gaussian with known covariance matrix but unknown mean, <span class="math">\(\vec\mu\)</span>. Let <span class="math">\(\mathcal
+            L(\vec\mu)\)</span> be the likelihood function for the Gaussian's mean, <span class="math">\(\vec\mu\)</span>. What type of object is <span class="math">\(\mathcal L\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}\)</span> to <span class="math">\(\mathbb{R}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}^d\)</span> to <span class="math">\(\mathbb{R}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}^n\)</span> to <span class="math">\(\mathbb{R}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}^{d}\)</span> to <span class="math">\(\mathbb{R}^n\)</span></p></label></div></form></div>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/wr8sNCEiIQs</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #106</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following set of 6 data points:</p>
+<div class="math">\[\begin{align*}
+                \nvec{x}{1} &= (1, 2)^T \\
+                \nvec{x}{2} &= (-1, 1)^T \\
+                \nvec{x}{3} &= (1, 3)^T \\
+                \nvec{x}{4} &= (1, 4)^T \\
+                \nvec{x}{5} &= (-1, 1)^T \\
+                \nvec{x}{6} &= (-1, 1)^T \\
+            \end{align*}\]</div>
+<p>In the below parts, your answers should be given as numbers. You may leave your answer as an unsimplified fraction or a decimal, if you prefer.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the (1,2) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e602ac20-a61e-4790-beb1-c997a982deb7" style="display: none">1</span>
+    <span id="button-e602ac20-a61e-4790-beb1-c997a982deb7">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e602ac20-a61e-4790-beb1-c997a982deb7').style.display = 'inline-block';
+                document.getElementById('button-e602ac20-a61e-4790-beb1-c997a982deb7').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the (2,2) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-ace3e2b6-4326-47e0-92e1-d2905c7f7400" style="display: none">8/6</span>
+    <span id="button-ace3e2b6-4326-47e0-92e1-d2905c7f7400">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-ace3e2b6-4326-47e0-92e1-d2905c7f7400').style.display = 'inline-block';
+                document.getElementById('button-ace3e2b6-4326-47e0-92e1-d2905c7f7400').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/BvFKfpGVR9k</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #107</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/Gaussians.html'>Gaussians</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>The picture below shows the contours of a multivariate Gaussian density function:</p>
+<center><div class="image"><img src="../images/107/fig.png" /></div></center>
+<p>Which one of the following could possibly be the covariance matrix of this Gaussian?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} -3 & 1 \\ 1 & -3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 3 & -1 \\ -1 & 3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 3 & -1 \\ -1 & 1 \end{pmatrix}\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>C. Video explanation: https://youtu.be/5b1nzF0yYeE</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #113</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following set of 6 data points:</p>
+<div class="math">\[\begin{align*}
+                \nvec{x}{1} &= (2, 4, 4)^T \\
+                \nvec{x}{2} &= (-1, 2, 1)^T \\
+                \nvec{x}{3} &= (3, -3, 2)^T \\
+                \nvec{x}{4} &= (0, -3, -3)^T \\
+            \end{align*}\]</div>
+<p>In the below parts, your answers should be given as numbers. You may leave your answer as an unsimplified fraction or a decimal, if you prefer.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the (1,3) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-60274431-6a19-442a-a93d-4b57560e2341" style="display: none">9/4</span>
+    <span id="button-60274431-6a19-442a-a93d-4b57560e2341">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-60274431-6a19-442a-a93d-4b57560e2341').style.display = 'inline-block';
+                document.getElementById('button-60274431-6a19-442a-a93d-4b57560e2341').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the (1,2) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-eef248d1-f940-4509-91ab-937df48ab4ba" style="display: none">-3/4</span>
+    <span id="button-eef248d1-f940-4509-91ab-937df48ab4ba">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-eef248d1-f940-4509-91ab-937df48ab4ba').style.display = 'inline-block';
+                document.getElementById('button-eef248d1-f940-4509-91ab-937df48ab4ba').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #114</h2>
+        <p>Tags: <a href='../tags/conditional independence.html'>conditional independence</a>, <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/covariance.html'>covariance</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(X_1\)</span> and <span class="math">\(X_2\)</span> be two independent random variables. Suppose the distribution of <span class="math">\(X_1\)</span> has the Gaussian density:</p>
+<div class="math">\[
+        p_1(x_1) = \frac{1}{\sqrt{8 \pi}}\, e^{-\frac{(x_1 - 2)^2}{8}},
+    \]</div>
+<p>while the distribution of <span class="math">\(X_2\)</span> has the Gaussian density:</p>
+<div class="math">\[
+        p_2(x_2) = \frac{1}{\sqrt{2\pi}}\, e^{-\frac{(x_2 + 1)^2}{2}}.
+    \]</div>
+<p>Which one of the following pictures shows the contours of the joint density <span class="math">\(p(x_1, x_2)\)</span>(the density for the joint distribution of <span class="math">\(X_1\)</span> and <span class="math">\(X_2\)</span>)?</p>
+<center><div class="image"><img src="../images/114/fig.png" /></div></center>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Picture (a)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Picture (b)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Picture (c)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Picture (d)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Picture (d).</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #116</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/bayes error.html'>bayes error</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose that, in a binary classification setting, the true underlying class-conditional densities <span class="math">\(p(\vec x \given Y=0)\)</span> and <span class="math">\(p(\vec x \given
+    Y=1)\)</span> are known to each be multivariate Gaussians with full covariance matrices. Suppose, also, that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = \frac{1}{2}\)</span>.</p>
+<p>True or False: it is possible that the Bayes error in this case is exactly zero.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #120</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/Gaussians.html'>Gaussians</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>The picture below shows the contours of a multivariate Gaussian density function:</p>
+<center><div class="image"><img src="../images/120/contours.png" /></div></center>
+<p>Which one of the following could possibly be the covariance matrix of this Gaussian?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 1 & 1 \\ 1 & 3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 3 & -1 \\ -1 & 3 \end{pmatrix}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(\begin{pmatrix} 3 & -1 \\ -1 & 1 \end{pmatrix}\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>C.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

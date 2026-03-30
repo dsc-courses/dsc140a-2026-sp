@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "regularization"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #015</h2>
+        <p>Tags: <a href='../tags/regularization.html'>regularization</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(R(\vec w)\)</span> be the unregularized empirical risk with respect to the square loss (that is, the mean squared error) on a data set.</p>
+<p>The image below shows the contours of <span class="math">\(R(\vec w)\)</span>. The dashed lines show places where <span class="math">\(\|\vec w\|_2\)</span> is 2, 4, 6, etc.</p>
+<center><div class="image"><img src="../images/015/contour.png" /></div></center>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Assuming that one of the points below is the minimizer of the <i>un</i>regularized risk, <span class="math">\(R(\vec w)\)</span>, which could it possibly be?</p>
+<details>
+    <summary>Solution</summary>
+<p>A</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let the <b>regularized</b> risk <span class="math">\(\tilde R(\vec w) = R(\vec w) + \lambda\|\vec w \|_2^2\)</span>, where <span class="math">\(\lambda > 0\)</span>.</p>
+<p>Assuming that one of the points below is the minimizer of the <b>regularized</b> risk, <span class="math">\(\tilde R(\vec w)\)</span>, which could it possibly be?</p>
+<details>
+    <summary>Solution</summary>
+<p>B</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #031</h2>
+        <p>Tags: <a href='../tags/regularization.html'>regularization</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(R(\vec w)\)</span> be an unregularized empirical risk function with respect to some data set.</p>
+<p>The image below shows the contours of <span class="math">\(R(\vec w)\)</span>. The dashed lines show places where <span class="math">\(\|\vec w\|_2\)</span> is 1, 2, 3, etc.</p>
+<center><div class="image"><img src="../images/031/contour.png" /></div></center>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Assuming that one of the points below is the minimizer of the <i>un</i>regularized risk, <span class="math">\(R(\vec w)\)</span>, which could it possibly be?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>B</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>C</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>D</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>E</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>F</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>G</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A minimizer of the unregularized risk could be point A.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let the <b>regularized</b> risk <span class="math">\(\tilde R(\vec w) = R(\vec w) + \lambda\|\vec w \|_2^2\)</span>, where <span class="math">\(\lambda > 0\)</span>.</p>
+<p>Assuming that one of the points below is the minimizer of the <b>regularized</b> risk, <span class="math">\(\tilde R(\vec w)\)</span>, which could it possibly be?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>B</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>C</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>D</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>E</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>F</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>G</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A minimizer of the regularized risk could be point D.</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #070</h2>
+        <p>Tags: <a href='../tags/regularization.html'>regularization</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Recall that in ridge regression, we solve the following optimization problem:</p>
+<div class="math">\[\operatorname{arg\,min}_{\vec w}\sum_{i=1}^n (y_i - \vec w \cdot\operatorname{Aug}(\nvec{x}{i}))^2 + \lambda\|\vec w\|^2.
+    \]</div>
+<p>where <span class="math">\(\lambda > 0\)</span> is a hyperparameter controlling the strength of regularization.</p>
+<p>Suppose you solve the ridge regression problem with <span class="math">\(\lambda = 2\)</span>, and the resulting solution is the weight vector <span class="math">\(\vec w_\text{old}\)</span>. You then solve the ridge regression problem with <span class="math">\(\lambda = 4\)</span> and find a weight vector <span class="math">\(\vec w_\text{new}\)</span>.</p>
+<p>True or False: each component of the new solution, <span class="math">\(\vec w_\text{new}\)</span>, must be less than or equal to the corresponding component of the old solution, <span class="math">\(\vec w_\text{old}\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+<p>While it is true that <span class="math">\(\|\vec w_\text{new}\|\leq\|\vec
+        w_\text{old}\|\)</span>, this does not imply that each component of <span class="math">\(\vec
+        w_\text{new}\)</span> is less than or equal to the corresponding component of <span class="math">\(\vec w_\text{old}\)</span>.</p>
+<p>The picture to have in mind is that of the contour lines of the mean squared error (which are ovals), along with the circles representing where <span class="math">\(\|\vec w\| = c\)</span> for some constant <span class="math">\(c\)</span>. The question asked us to consider going from <span class="math">\(\lambda = 2\)</span> to <span class="math">\(\lambda =
+        4\)</span>, but to gain an intuition we can think of going from no regularization (<span class="math">\(\lambda = 0\)</span>) to some regularization (<span class="math">\(\lambda > 0\)</span>); this won't affect the outcome, but will make the story easier to tell.</p>
+<p>Consider the situation shown below:</p>
+<center><div class="image"><img src="../images/070/contour.png" /></div></center>
+<p>When we had no regularization, the solution was <span class="math">\(\vec w_\text{old}\)</span>, as marked. Suppose we add regularization, and we're told that the regularization is such that when we solve the ridge regression problem, the norm of <span class="math">\(\vec w_\text{new}\)</span> will be equal to <span class="math">\(c\)</span>, and that the radius of the circle we've drawn is <span class="math">\(c\)</span>. Then the solution <span class="math">\(\vec w_\text{new}\)</span> will be the point marked, since that is the point on the circle that is on the lowest contour.</p>
+<p>Notice that the point <span class="math">\(\vec w_\text{new}\)</span> is closer to the origin, and it's first component is much smaller than the first component of <span class="math">\(\vec w_\text{old}\)</span>. However, the second component of <span class="math">\(\vec w_\text{new}\)</span> is actually <i>larger</i> than the second component of <span class="math">\(\vec w_\text{old}\)</span>.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #075</h2>
+        <p>Tags: <a href='../tags/regularization.html'>regularization</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>The ``inifinity norm'' of a vector <span class="math">\(\vec w \in\mathbb R^d\)</span>, written <span class="math">\(\|\vec w\|_\infty\)</span>, is defined as:</p>
+<div class="math">\[\|\vec w\|_\infty = \max_{i = 1, \ldots, d} |w_i|.
+    \]</div>
+<p>That is, it is the maximum absolute value of any entry of <span class="math">\(\vec w\)</span>.</p>
+<p>Let <span class="math">\(R(\vec w)\)</span> be an unregularized risk function on a data set. The solid curves in the plot below are the contours of <span class="math">\(R(\vec w)\)</span>. The dashed lines show where <span class="math">\(\|\vec w\|_\infty\)</span> is equal to 1, 2, 3, and so on.</p>
+<center><div class="image"><img src="../images/075/contour.png" /></div></center>
+<p>Let <span class="math">\(\tilde R(\vec w) = R(\vec w) + \lambda\|\vec w\|_\infty^2\)</span>, with <span class="math">\(\lambda > 0\)</span>. The point marked <span class="math">\(A\)</span> is the minimizer of the unregularized risk. Suppose that it is known that one of the other points is the minimizer of the regularized risk, <span class="math">\(\tilde R(\vec w)\)</span>, for some unknown <span class="math">\(\lambda > 0\)</span>. Which point is it?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(B\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(C\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(D\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(E\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(F\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(G\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>D.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #086</h2>
+        <p>Tags: <a href='../tags/regularization.html'>regularization</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Recall that in ridge regression, we solve the following optimization problem:</p>
+<div class="math">\[\operatorname{arg\,min}_{\vec w}\sum_{i=1}^n (y_i - \vec w \cdot\operatorname{Aug}(\nvec{x}{i}))^2 + \lambda\|\vec w\|^2.
+    \]</div>
+<p>where <span class="math">\(\lambda > 0\)</span> is a hyperparameter controlling the strength of regularization.</p>
+<p>Suppose you solve the ridge regression problem with <span class="math">\(\lambda = 2\)</span>, and the resulting solution has a mean squared error of <span class="math">\(10\)</span>.</p>
+<p>Now suppose you increase the regularization strength to <span class="math">\(\lambda = 4\)</span> and solve the ridge regression problem again. True or False: it is possible that the mean squared error of the new solution is less than <span class="math">\(10\)</span>.</p>
+<p>By ``mean squared error,'' we mean <span class="math">\(\frac1n \sum_{i=1}^n (y_i - \vec w \cdot\operatorname{Aug}(\nvec{x}{i}))^2\)</span></p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #091</h2>
+        <p>Tags: <a href='../tags/regularization.html'>regularization</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>The ``<span class="math">\(p = \frac12\)</span>'' norm of a vector <span class="math">\(\vec w \in\mathbb R^d\)</span>, written <span class="math">\(\|\vec w\|_{\frac12}\)</span>, is defined as:</p>
+<div class="math">\[\|\vec w\|_{\frac12} = \left(\sum_{i = 1}^d \sqrt{|w_i|}\right)^2
+    \]</div>
+<p>Let <span class="math">\(R(\vec w)\)</span> be an unregularized risk function on a data set. The solid curves in the plot below are the contours of <span class="math">\(R(\vec w)\)</span>. The dashed lines show where <span class="math">\(\|\vec w\|_{\frac12}\)</span> is equal to 1, 2, 3, and so on.</p>
+<center><div class="image"><img src="../images/091/contour.png" /></div></center>
+<p>Let <span class="math">\(\tilde R(\vec w) = R(\vec w) + \lambda\|\vec w\|_{\frac12}\)</span>, with <span class="math">\(\lambda > 0\)</span>. The point marked <span class="math">\(A\)</span> is the minimizer of the unregularized risk. Suppose it is known that one of the other points is the minimizer of the regularized risk, <span class="math">\(\tilde R(\vec w)\)</span>, for some unknown <span class="math">\(\lambda > 0\)</span>. Which point is it?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(B\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(C\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(D\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(E\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(F\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(G\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>D.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

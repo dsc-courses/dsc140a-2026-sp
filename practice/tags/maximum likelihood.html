@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "maximum likelihood"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #037</h2>
+        <p>Tags: <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a discrete random variable <span class="math">\(X\)</span> takes on values of either 0 or 1 and has the distribution:</p>
+<div class="math">\[\pr(X = x) = \theta^x (1 - \theta)^{1 - x}\]</div>
+<p>where <span class="math">\(\theta\in[0, 1]\)</span> is a parameter.</p>
+<p>Given a data set <span class="math">\(x_1, \ldots, x_n\)</span>, what is the maximum likelihood estimate for the parameter <span class="math">\(\theta\)</span>? Show your work.</p>
+<details>
+    <summary>Solution</summary>
+<p>The maximum likelihood estimate for <span class="math">\(\theta\)</span> is the mean of all data points: <span class="math">\(\theta = \frac{1}{n}\sum_{i=1}^{n} x_i\)</span> We can derive it as follows. First, set up the likelihood function</p>
+<div class="math">\[
+        L(\theta) = \prod_{i=1}^{n}\theta^{x_i}(1-\theta)^{\,1-x_i}\]</div>
+<p>Then, to make our lives easier, we can find the log-likelihood before differentiating:</p>
+<div class="math">\[\ell(\theta) = \log L(\theta) = \sum_{i=1}^{n} x_i \log\theta + \sum_{i=1}^{n}(1-x_i) \log(1-\theta)
+    \]</div>
+<div class="math">\[\frac{\partial \ell(\theta)}{\partial \theta} = \frac{\sum_{i=1}^{n} x_i}{\theta} - \frac{\sum_{i=1}^{n} (1-x_i)}{1-\theta}\]</div>
+<div class="math">\[\text{Setting }\frac{\partial \ell(\theta)}{\partial \theta} = 0 \quad\Longrightarrow\quad\frac{\sum_{i=1}^{n} x_i}{\theta} - \frac{\sum_{i=1}^{n} (1-x_i)}{1-\theta} = 0
+    \]</div>
+<div class="math">\[\theta\sum_{i=1}^{n}(1-x_i) = (1-\theta) \sum_{i=1}^{n} x_i.
+    \]</div>
+<div class="math">\[\text{and hence}\quad\theta = \frac{1}{n}\sum_{i=1}^{n} x_i.
+    \]</div>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #039</h2>
+        <p>Tags: <a href='../tags/density estimation.html'>density estimation</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose data points <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> are drawn from an arbitrary, unknown distribution with density <span class="math">\(f\)</span>.</p>
+<p>True or False: it is guaranteed that, given enough data (that is, <span class="math">\(n\)</span> large enough), a Gaussian fit to the data using the method of maximum likelihood will approximate the true underlying density <span class="math">\(f\)</span> arbitrarily closely.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #040</h2>
+        <p>Tags: <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a Gaussian with a diagonal covariance matrix is fit to 200 points in <span class="math">\(\mathbb R^4\)</span> using the maximum likelihood estimators. How many parameters are estimated? Count each entry of <span class="math">\(\mu\)</span> and the covariance matrix that must be estimated as its own parameter.</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e3398334-d151-4da3-84d3-dc60befa31ff" style="display: none">8</span>
+    <span id="button-e3398334-d151-4da3-84d3-dc60befa31ff">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e3398334-d151-4da3-84d3-dc60befa31ff').style.display = 'inline-block';
+                document.getElementById('button-e3398334-d151-4da3-84d3-dc60befa31ff').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #051</h2>
+        <p>Tags: <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a continuous random variable <span class="math">\(X\)</span> has the density:</p>
+<div class="math">\[
+        p(x) = \theta e^{-\theta x}\]</div>
+<p>where <span class="math">\(\theta\in(0, \infty)\)</span> is a parameter, and where <span class="math">\(x > 0\)</span>.</p>
+<p>Given a data set <span class="math">\(x_1, \ldots, x_n\)</span>, what is the maximum likelihood estimate for the parameter <span class="math">\(\theta\)</span>? Show your work.</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #053</h2>
+        <p>Tags: <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a Gaussian with a diagonal covariance matrix is fit to 200 points in <span class="math">\(\mathbb R^4\)</span> using the maximum likelihood estimators. How many parameters are estimated? Count each entry of <span class="math">\(\vec\mu\)</span> and the covariance matrix that must be estimated as its own parameter (the off-diagonal elements of the covariance are zero, and shouldn't be included in your count).</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-77825b67-156a-4aff-bb1a-60ac65c40318" style="display: none">8</span>
+    <span id="button-77825b67-156a-4aff-bb1a-60ac65c40318">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-77825b67-156a-4aff-bb1a-60ac65c40318').style.display = 'inline-block';
+                document.getElementById('button-77825b67-156a-4aff-bb1a-60ac65c40318').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #100</h2>
+        <p>Tags: <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a univariate Gaussian density function <span class="math">\(\hat f\)</span> is fit to a set of data using the method of maximum likelihood estimation (MLE).</p>
+<p>True or False: <span class="math">\(\hat f\)</span> must be between 0 and 1 everywhere. That is, it must be the case that for every <span class="math">\(x \in\mathbb R\)</span>, <span class="math">\(0 < \hat f(x) \leq 1\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False. Video explanation: https://youtu.be/zvpLrG4FYEc</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #102</h2>
+        <p>Tags: <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider <i>Justin's rectangle</i> density. It is a parametric density with two parameters, <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span>, and pdf:</p>
+<div class="math">\[
+        f(x ; \alpha, \beta) =
+        \begin{cases}
+            \frac{1}{2\beta}
+            & \text{if } x \in[\alpha - \beta, \alpha + \beta]
+            \\
+            0
+            & \text{otherwise}
+        \end{cases}\]</div>
+<p>A picture of the density is shown below for convenience:</p>
+<center><div class="image"><img src="../images/102/fig.png" /></div></center>
+<p>In all of the below parts, let <span class="math">\(\mathcal X = \{1, 2, 3, 6, 9\}\)</span> be a data set of 5 points generated from the rectangle density.</p>
+<p>Your answers to the below problems should all be in the form of a number. You may leave your answer as an unsimplified fraction or a decimal, if you prefer.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(\mathcal L(\alpha, \beta; \mathcal X)\)</span> be the likelihood function (with respect to the data given above). What is <span class="math">\(\mathcal
+            L(6, 5)\)</span>? Note that <span class="math">\(\mathcal L\)</span> is the likelihood, <i>not</i> the <i>log</i>-likelihood.</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-891e9a57-0e0f-46a1-aa79-7013fde985d1" style="display: none"><span class="math">\(10^{-5}\)</span></span>
+    <span id="button-891e9a57-0e0f-46a1-aa79-7013fde985d1">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-891e9a57-0e0f-46a1-aa79-7013fde985d1').style.display = 'inline-block';
+                document.getElementById('button-891e9a57-0e0f-46a1-aa79-7013fde985d1').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is <span class="math">\(\mathcal L(3, 2)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-6a82d9f5-165e-47e6-9a5a-b8236e08e2ec" style="display: none">0</span>
+    <span id="button-6a82d9f5-165e-47e6-9a5a-b8236e08e2ec">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-6a82d9f5-165e-47e6-9a5a-b8236e08e2ec').style.display = 'inline-block';
+                document.getElementById('button-6a82d9f5-165e-47e6-9a5a-b8236e08e2ec').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>What are the maximum likelihood estimates of <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span>?</p>
+<p><span class="math">\(\alpha\)</span>: 
+<span class="inline-response-box">
+    <span id="answer-44cdc48a-880d-4cf6-8ebc-6408aead6c57" style="display: none">5</span>
+    <span id="button-44cdc48a-880d-4cf6-8ebc-6408aead6c57">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-44cdc48a-880d-4cf6-8ebc-6408aead6c57').style.display = 'inline-block';
+                document.getElementById('button-44cdc48a-880d-4cf6-8ebc-6408aead6c57').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+<span class="math">\(\beta\)</span>: 
+<span class="inline-response-box">
+    <span id="answer-369c9e46-ca37-497a-a78e-caa9c1743998" style="display: none">4</span>
+    <span id="button-369c9e46-ca37-497a-a78e-caa9c1743998">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-369c9e46-ca37-497a-a78e-caa9c1743998').style.display = 'inline-block';
+                document.getElementById('button-369c9e46-ca37-497a-a78e-caa9c1743998').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/loc1xv2QNJk</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #106</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following set of 6 data points:</p>
+<div class="math">\[\begin{align*}
+                \nvec{x}{1} &= (1, 2)^T \\
+                \nvec{x}{2} &= (-1, 1)^T \\
+                \nvec{x}{3} &= (1, 3)^T \\
+                \nvec{x}{4} &= (1, 4)^T \\
+                \nvec{x}{5} &= (-1, 1)^T \\
+                \nvec{x}{6} &= (-1, 1)^T \\
+            \end{align*}\]</div>
+<p>In the below parts, your answers should be given as numbers. You may leave your answer as an unsimplified fraction or a decimal, if you prefer.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the (1,2) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-283c3651-2113-489d-b361-6ecf6a13e2e7" style="display: none">1</span>
+    <span id="button-283c3651-2113-489d-b361-6ecf6a13e2e7">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-283c3651-2113-489d-b361-6ecf6a13e2e7').style.display = 'inline-block';
+                document.getElementById('button-283c3651-2113-489d-b361-6ecf6a13e2e7').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the (2,2) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-40c707f2-3d6d-4250-b002-5205af746acc" style="display: none">8/6</span>
+    <span id="button-40c707f2-3d6d-4250-b002-5205af746acc">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-40c707f2-3d6d-4250-b002-5205af746acc').style.display = 'inline-block';
+                document.getElementById('button-40c707f2-3d6d-4250-b002-5205af746acc').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/BvFKfpGVR9k</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #113</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following set of 6 data points:</p>
+<div class="math">\[\begin{align*}
+                \nvec{x}{1} &= (2, 4, 4)^T \\
+                \nvec{x}{2} &= (-1, 2, 1)^T \\
+                \nvec{x}{3} &= (3, -3, 2)^T \\
+                \nvec{x}{4} &= (0, -3, -3)^T \\
+            \end{align*}\]</div>
+<p>In the below parts, your answers should be given as numbers. You may leave your answer as an unsimplified fraction or a decimal, if you prefer.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the (1,3) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-1b0aad05-76c0-45fd-a763-cb74ed871278" style="display: none">9/4</span>
+    <span id="button-1b0aad05-76c0-45fd-a763-cb74ed871278">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-1b0aad05-76c0-45fd-a763-cb74ed871278').style.display = 'inline-block';
+                document.getElementById('button-1b0aad05-76c0-45fd-a763-cb74ed871278').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the (1,2) entry of the sample covariance matrix?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-b2b5602e-df61-4e6b-97c2-c3e93b425d8b" style="display: none">-3/4</span>
+    <span id="button-b2b5602e-df61-4e6b-97c2-c3e93b425d8b">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-b2b5602e-df61-4e6b-97c2-c3e93b425d8b').style.display = 'inline-block';
+                document.getElementById('button-b2b5602e-df61-4e6b-97c2-c3e93b425d8b').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #115</h2>
+        <p>Tags: <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/maximum likelihood.html'>maximum likelihood</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose it is known that the distribution of a random variable <span class="math">\(X\)</span> has a univariate Gaussian density function <span class="math">\(f\)</span>.</p>
+<p>True or False: <span class="math">\(f\)</span> must be between 0 and 1 everywhere. That is, it must be the case that for every <span class="math">\(x \in\mathbb R\)</span>, <span class="math">\(0 < f(x) \leq 1\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

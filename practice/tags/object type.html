@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "object type"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #005</h2>
+        <p>Tags: <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(\Phi\)</span> be an <span class="math">\(n \times d\)</span> design matrix, let <span class="math">\(\lambda\)</span> be a real number, and let <span class="math">\(I\)</span> be a <span class="math">\(d \times d\)</span> identity matrix.</p>
+<p>What type of object is <span class="math">\((\Phi^T \Phi + n \lambda I)^{-1}\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A <span class="math">\(d \times d\)</span> matrix</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let <span class="math">\(\Phi\)</span> be an <span class="math">\(n \times d\)</span> design matrix, and let <span class="math">\(\vec y \in\mathbb R^n\)</span>. What type of object is <span class="math">\(\Phi^T \vec y\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A vector in <span class="math">\(\mathbb R^d\)</span></p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Let <span class="math">\(\vec w \in\mathbb R^{d+1}\)</span>, and for for each <span class="math">\(i \in\{1, 2, \ldots, n\}\)</span> let <span class="math">\(\nvec{x}{i}\in\mathbb R^d\)</span> and <span class="math">\(y_i \in\mathbb R\)</span>.</p>
+<p>What type of object is:</p>
+<div class="math">\[\sum_{i = 1}^n \left(\vec w \cdot\Aug(\nvec{x}{i}) - y_i\right)^2?
+         \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^{d+1}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A scalar</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(\vec w \in\mathbb R^{d+1}\)</span>, and for for each <span class="math">\(i \in\{1, 2, \ldots, n\}\)</span> let <span class="math">\(\nvec{x}{i}\in\mathbb R^d\)</span> and <span class="math">\(y_i \in\mathbb R\)</span>. Consider the empirical risk with respect to the square loss of a linear predictor on a data set of <span class="math">\(n\)</span> points:</p>
+<div class="math">\[
+            R(\vec w) = \frac 1n \sum_{i=1}^n (\vec w \cdot\Aug(\nvec{x}{i}) - y_i)^2
+        \]</div>
+<p>What type of object is <span class="math">\(\nabla R(\vec w)\)</span>; that is, the gradient of the risk with respect to the parameter vector <span class="math">\(\vec w\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^{d+1}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A vector in <span class="math">\(\mathbb R^{d+1}\)</span></p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #022</h2>
+        <p>Tags: <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(\vec x \in\mathbb R^d\)</span> and let <span class="math">\(A\)</span> be an <span class="math">\(d \times d\)</span> matrix. What type of object is <span class="math">\(\vec x^T A \vec x\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A scalar</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let <span class="math">\(A\)</span> be an <span class="math">\(n \times n\)</span> matrix, and let <span class="math">\(\vec x \in\mathbb R^n\)</span>. What type of object is: <span class="math">\((A + A^T)^{-1}x\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A vector in <span class="math">\(\mathbb R^n\)</span></p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Suppose we train a support vector machine <span class="math">\(H(\vec x) = \Aug(\vec x) \cdot\vec w\)</span> on a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb R^d\)</span>. What type of object is the resulting parameter vector, <span class="math">\(\vec w\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^{d+1}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^{n+1}\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A vector in <span class="math">\(\mathbb R^{d+1}\)</span></p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #064</h2>
+        <p>Tags: <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Choose the option which best completes the following sentence: In least squares regression, we can fit a linear prediction function <span class="math">\(H\)</span> by computing the gradient of the _________ with respect to ________ and solving.</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>square loss, the weights</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>risk, the weights</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>square loss, the data</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>risk, the data</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>risk, the weights</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #065</h2>
+        <p>Tags: <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>For each <span class="math">\(i = 1, \ldots, n\)</span>, let <span class="math">\(\nvec{x}{i}\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span> and let <span class="math">\(\alpha_i\)</span> be a scalar. What type of object is:</p>
+<div class="math">\[\sum_{i = 1}^n \alpha_i \nvec{x}{i}?
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A vector in <span class="math">\(\mathbb R^d\)</span></p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let <span class="math">\(\Phi\)</span> be an <span class="math">\(n \times d\)</span> matrix, let <span class="math">\(\vec y\)</span> be a vector in <span class="math">\(\mathbb R^n\)</span>, and let <span class="math">\(\vec\alpha\)</span> be a vector in <span class="math">\(\mathbb R^n\)</span>. What type of object is:</p>
+<div class="math">\[\frac1n \|\Phi\Phi^T \vec\alpha - \vec y\|^2 + \vec\alpha^T \Phi\Phi^T \vec\alpha\]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A scalar</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Let <span class="math">\(\vec x\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span>, and let <span class="math">\(A\)</span> be a <span class="math">\(d \times d\)</span> matrix. What type of object is:</p>
+<div class="math">\[\frac{\vec x^T A \vec x}{\vec x^T \vec x}?
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A scalar</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(A\)</span> be a <span class="math">\(d \times n\)</span> matrix. What type of object is <span class="math">\((A A^T)^{-1}\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A <span class="math">\(d \times d\)</span> matrix</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 5)</h3>
+<p>For each <span class="math">\(i = 1, \ldots, n\)</span>, let <span class="math">\(\nvec{x}{i}\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span>. What type of object is:</p>
+<div class="math">\[\sum_{i = 1}^n \nvec{x}{i}(\nvec{x}{i})^T?
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A <span class="math">\(d \times d\)</span> matrix</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #076</h2>
+        <p>Tags: <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(f : \mathbb R^d \to\mathbb R\)</span> be a function and let <span class="math">\(\nvec{x}{0}\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span>. What type of object is <span class="math">\(\frac{d}{d \vec x} f(\nvec{x}{0})\)</span>? In other words, what type of object is the gradient of <span class="math">\(f\)</span> evaluated at <span class="math">\(\nvec{x}{0}\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A vector in <span class="math">\(\mathbb R^d\)</span>.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let <span class="math">\(\Phi\)</span> be an <span class="math">\(n \times d\)</span> matrix and let <span class="math">\(\vec\alpha\)</span> be a vector in <span class="math">\(\mathbb R^n\)</span>. What type of object is:</p>
+<div class="math">\[\vec\alpha^T \Phi\Phi^T \vec\alpha\]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A scalar.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>For each <span class="math">\(i = 1, \ldots, n\)</span>, let <span class="math">\(\nvec{x}{i}\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span> and <span class="math">\(y_i\)</span> be a scalar. Let <span class="math">\(\vec w\)</span> be a vector in <span class="math">\(\mathbb R^d\)</span>. What type of object is:</p>
+<div class="math">\[\frac1n \sum_{i = 1}^n \left(\operatorname{Aug}(\nvec{x}{i}) \cdot\vec w - y_i
+                \right)^2
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A scalar.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(X\)</span> be an <span class="math">\(n \times d\)</span> matrix, and assume that <span class="math">\(X^T X\)</span> is invertible. What type of object is <span class="math">\(X(X^T X)^{-1} X^T\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A vector in <span class="math">\(\mathbb R^d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>An <span class="math">\(n \times n\)</span> matrix.</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #103</h2>
+        <p>Tags: <a href='../tags/covariance.html'>covariance</a>, <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(\mathcal{X}\)</span> be a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>, and let <span class="math">\(\vec\alpha\)</span> be the solution to the kernel ridge regression dual problem. What type of object is <span class="math">\(\vec\alpha\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>B.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Suppose <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> is a set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>, <span class="math">\(y_1, \ldots, y_n\)</span> is a set of <span class="math">\(n\)</span> labels (each either <span class="math">\(-1\)</span> or <span class="math">\(1\)</span>), <span class="math">\(\vec w\)</span> is a <span class="math">\(k\)</span>-dimensional vector, and <span class="math">\(\lambda\)</span> is a scalar.</p>
+<p>Let <span class="math">\(\vec\phi : \mathbb{R}^d \to\mathbb{R}^k\)</span> be a feature map.</p>
+<p>What type of object is the following?</p>
+<div class="math">\[\sum_{i=1}^n
+                \left(                    -\frac{1}{n \lambda}\vec\phi(\nvec{x}{i}) \cdot\vec w
+                    - y_i
+                \right)\vec\phi(\nvec{x}{i})
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(k\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>D.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be a set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>. Let <span class="math">\(\vec\mu = \sum_{i=1}^n \nvec{x}{i}\)</span> be the mean of the data set, and let <span class="math">\(C\)</span> be the sample covariance matrix.</p>
+<p>What type of object is the following?</p>
+<div class="math">\[
+                -\frac{1}{2}(\nvec{x}{1} - \vec\mu)^T C^{-1}(\nvec{x}{1} - \vec\mu)
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span> sampled from a multivariate Gaussian with known covariance matrix but unknown mean, <span class="math">\(\vec\mu\)</span>. Let <span class="math">\(\mathcal
+            L(\vec\mu)\)</span> be the likelihood function for the Gaussian's mean, <span class="math">\(\vec\mu\)</span>. What type of object is <span class="math">\(\mathcal L\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}\)</span> to <span class="math">\(\mathbb{R}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}^d\)</span> to <span class="math">\(\mathbb{R}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}^n\)</span> to <span class="math">\(\mathbb{R}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A function from <span class="math">\(\mathbb{R}^{d}\)</span> to <span class="math">\(\mathbb{R}^n\)</span></p></label></div></form></div>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/wr8sNCEiIQs</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #118</h2>
+        <p>Tags: <a href='../tags/object type.html'>object type</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>Let <span class="math">\(\mathcal{X}\)</span> be a data set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>, and let <span class="math">\(C\)</span> be the sample covariance matrix of <span class="math">\(\mathcal{X}\)</span>. Let <span class="math">\(|C|\)</span> denote the determinant of <span class="math">\(C\)</span>. What type of object is the following?</p>
+<div class="math">\[(2 \pi)^{d/2} |C|^{1/2}\]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Suppose <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> is a set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>, <span class="math">\(\lambda\)</span> is a positive real number, <span class="math">\(\vec y \in\mathbb R^n\)</span> is a vector of targets, and <span class="math">\(\vec\phi : \mathbb{R}^d
+            \to\mathbb{R}^k\)</span> is a feature map. Let <span class="math">\(K\)</span> be the kernel matrix for this feature map on this data set, and let <span class="math">\(I\)</span> be an identity matrix (the same shape as <span class="math">\(K\)</span>). What type of object is the following?</p>
+<div class="math">\[(K + n \lambda I)^{-1}\vec y
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>C.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be a set of <span class="math">\(n\)</span> points in <span class="math">\(\mathbb{R}^d\)</span>. Let <span class="math">\(\vec\mu = \frac1n \sum_{i=1}^n \nvec{x}{i}\)</span> be the mean of the data set, and let <span class="math">\(C\)</span> be the sample covariance matrix.</p>
+<p>What type of object is the following?</p>
+<div class="math">\[
+                C^{-1}(\nvec{x}{1} - \vec\mu)
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>B.</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(\nvec{x}{1}, \ldots, \nvec{x}{n}\)</span> be a data set of <span class="math">\(n\)</span> points, let <span class="math">\(\vec\alpha\in\mathbb{R}^n\)</span>, and let <span class="math">\(\kappa\)</span> be a kernel function for a feature map <span class="math">\(\vec\phi : \mathbb R^d \to\mathbb R^k\)</span>. Suppose also that <span class="math">\(\vec z \in\mathbb{R}^d\)</span>. What type of object is the following?</p>
+<div class="math">\[\sum_{i=1}^n \alpha_i \kappa(\nvec{x}{i}, \vec z)
+            \]</div>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A scalar</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n\)</span>-dimensional vector</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>An <span class="math">\(n \times n\)</span> matrix</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>A <span class="math">\(d \times d\)</span> matrix</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>A.</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

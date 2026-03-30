@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "nearest neighbor"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #001</h2>
+        <p>Tags: <a href='../tags/nearest neighbor.html'>nearest neighbor</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set shown below:</p>
+<center><div class="image"><img src="../images/001/data.png" /></div></center>
+<p>What is the predicted value of <span class="math">\(y\)</span> at <span class="math">\(x = 3\)</span> if the 3-nearest neighbor rule is used?</p>
+<details>
+    <summary>Solution</summary>
+<p>6</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #018</h2>
+        <p>Tags: <a href='../tags/nearest neighbor.html'>nearest neighbor</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set of diamonds and circles shown below. Suppose a <span class="math">\(k\)</span>-nn classifier is used to predict the label of the new point marked by <span class="math">\(\times\)</span>, with <span class="math">\(k = 3\)</span>. What will be the prediction? You may assume that the Euclidean distance is used.</p>
+<center><div class="image"><img src="../images/018/data-no-soln.PNG" /></div></center>
+<details>
+    <summary>Solution</summary>
+<p>The new point will be classified as a Diamond.</p>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3\)</span>) nearest "neighbors" to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p>So, what are the three neighbors closest to our new point? Since we assume Euclidean distance (and not some other type of distance, like Manhattan distance), this problem becomes fairly easy to solve from first glance.</p>
+<p>Graphically: the three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p>Mathematically: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-1)^2 + (-2)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph. As an aside, the idea behind <span class="math">\(k\)</span>-nn is that we assume a property that if two points are similar in location (i.e. they are near each other), then they are likely similar in class. So, <span class="math">\(k\)</span>-nn is valuable in situations where we have data that is very spatially correlated (ex: predicting price of a new house as "high" or "low" depending on other house prices in the area.)</p>
+</details>
+
+<details>
+    <summary>Solution</summary>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3)\)</span> nearest neighbors to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p><b>Graphically</b>: The three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p><b>Mathematically</b>: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances to our new point are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points to our new point are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-2)^2 + (-1)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #059</h2>
+        <p>Tags: <a href='../tags/nearest neighbor.html'>nearest neighbor</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\mathcal X = \{(\nvec{x}{1}, y_1), \ldots, (\nvec{x}{n}, y_n)\}\)</span> be a labeled dataset, where <span class="math">\(\nvec{x}{i}\in\mathbb R^d\)</span> is a feature vector and <span class="math">\(y_i \in\{-1, 1\}\)</span> is a binary label. Let <span class="math">\(\vec x\)</span> be a new point that is not in the data set. Suppose a nearest neighbor classifier is used to predict the label of <span class="math">\(\vec x\)</span>, and the resulting prediction is <span class="math">\(-1\)</span>. (You may assume that there is a unique nearest neighbor of <span class="math">\(\vec x\)</span>.)</p>
+<p>Now let <span class="math">\(\mathcal Z\)</span> be a new dataset obtained from <span class="math">\(\mathcal X\)</span> by scaling each feature by a factor of 2. That is, <span class="math">\(\mathcal Z = \{(\nvec{z}{1}, y_1),
+    \ldots, (\nvec{z}{n}, y_n)\}\)</span>, where <span class="math">\(\nvec{z}{i} = 2 \nvec{x}{i}\)</span> for each <span class="math">\(i\)</span>. Let <span class="math">\(\vec z = 2 \vec x\)</span>. Suppose a nearest neighbor classifier trained on <span class="math">\(\mathcal Z\)</span> is used to predict the label of <span class="math">\(\vec z\)</span>.</p>
+<p>True or False: the predicted label of <span class="math">\(\vec z\)</span> must also be <span class="math">\(-1\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+<p>This question is essentially asking: if we scale a data set by a constant factor, does the nearest neighbor of a point change? The answer is no: therefore, the predicted label cannot change.</p>
+<p>When we multiply each feature of a point by the same constant factor, it has the effect of scaling the data set. That is, if <span class="math">\(\mathcal X\)</span> is the data shown in the top of the image shown below, then <span class="math">\(\mathcal Z\)</span> is the data shown in the bottom of the image (not drawn to scale):</p>
+<center><div class="image"><img src="../images/059/nnscale.png" /></div></center>
+<p>You can see that the nearest neighbor of <span class="math">\(\vec x\)</span> in <span class="math">\(\mathcal X\)</span> is point #4, and the nearest neighbor of <span class="math">\(\vec z\)</span> in <span class="math">\(\mathcal Z\)</span> remains point #4. As such, the predicted label does not change.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #077</h2>
+        <p>Tags: <a href='../tags/nearest neighbor.html'>nearest neighbor</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\mathcal X = \{(\nvec{x}{1}, y_1), \ldots, (\nvec{x}{n}, y_n)\}\)</span> be a labeled dataset, where <span class="math">\(\nvec{x}{i}\in\mathbb R^d\)</span> is a feature vector and <span class="math">\(y_i \in\{-1, 1\}\)</span> is a binary label. Let <span class="math">\(\vec x\)</span> be a new point that is not in the data set. Suppose a nearest neighbor classifier is used to predict the label of <span class="math">\(\vec x\)</span>, and the resulting prediction is <span class="math">\(-1\)</span>. (You may assume that there is a unique nearest neighbor of <span class="math">\(\vec x\)</span>.)</p>
+<p>Now let <span class="math">\(\mathcal Z\)</span> be a new dataset obtained from <span class="math">\(\mathcal X\)</span> by subtracting the same vector <span class="math">\(\vec\delta\)</span> from each training point. That is, <span class="math">\(\mathcal Z = \{(\nvec{z}{1}, y_1),
+    \ldots, (\nvec{z}{n}, y_n)\}\)</span>, where <span class="math">\(\nvec{z}{i} = \nvec{x}{i} - \vec\delta\)</span> for each <span class="math">\(i\)</span>. Let <span class="math">\(\vec z = \vec x - \vec\delta\)</span>. Suppose a nearest neighbor classifier trained on <span class="math">\(\mathcal Z\)</span> is used to predict the label of <span class="math">\(\vec z\)</span>.</p>
+<p>True or False: the predicted label of <span class="math">\(\vec z\)</span> must also be <span class="math">\(-1\)</span>.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

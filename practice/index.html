@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href=".././style/style.css">
+        <link rel="stylesheet" href="./practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=".././index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=".././syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=".././office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=".././practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        <div>
+<h1>Practice Problems</h1>
+<p><div class="alert alert-primary" role="alert">
+    This set of practice problems is new this quarter. <b>Please let us know
+        if you find any errors or have any suggestions</b>.
+</div></p>
+
+            <div class="tagset">
+                <h2>Midterm 01</h2>
+                <p><p>
+Practice problems for topics on Midterm 01.
+</p>
+<p>
+See 
+<a href="http://dsc140a.com/materials/default/supplementary/sample_midterm_01/mt01.pdf">Sample Midterm 01</a>
+for an example midterm from a previous quarter. This is a good way to get a sense of the format of the exam. However, note that the topics covered may change slightly from
+quarter to quarter, and so the sample exam may not be a perfect match for the topics covered in this quarter.
+</p></p>
+                <p>
+                    <a href="./midterm-01.html">See all problems in this set</a>, or
+                    choose a tag below to view only those problems.
+                </p>
+            <ul>
+<li><a href='./tags/SVMs.html'>SVMs</a></li>
+<li><a href='./tags/computing loss.html'>computing loss</a></li>
+<li><a href='./tags/convexity.html'>convexity</a></li>
+<li><a href='./tags/feature maps.html'>feature maps</a></li>
+<li><a href='./tags/gradient descent.html'>gradient descent</a></li>
+<li><a href='./tags/gradients.html'>gradients</a></li>
+<li><a href='./tags/least squares.html'>least squares</a></li>
+<li><a href='./tags/linear prediction functions.html'>linear prediction functions</a></li>
+<li><a href='./tags/linear regression.html'>linear regression</a></li>
+<li><a href='./tags/nearest neighbor.html'>nearest neighbor</a></li>
+<li><a href='./tags/object type.html'>object type</a></li>
+<li><a href='./tags/perceptrons.html'>perceptrons</a></li>
+<li><a href='./tags/subgradients.html'>subgradients</a></li>
+</ul>
+            </div>
+
+
+<div class="tagset">
+    <h2>Midterm 02</h2>
+    <p>Practice problems for topics on Midterm 02.</p>
+    <p>
+        <a href="./midterm-02.html">See all problems in this set</a>, or
+        choose a tag below to view only those problems.
+    </p>
+<ul>
+<li><a href='./tags/Gaussians.html'>Gaussians</a></li>
+<li><a href='./tags/bayes classifier.html'>bayes classifier</a></li>
+<li><a href='./tags/bayes error.html'>bayes error</a></li>
+<li><a href='./tags/conditional independence.html'>conditional independence</a></li>
+<li><a href='./tags/covariance.html'>covariance</a></li>
+<li><a href='./tags/density estimation.html'>density estimation</a></li>
+<li><a href='./tags/histogram estimators.html'>histogram estimators</a></li>
+<li><a href='./tags/kernel ridge regression.html'>kernel ridge regression</a></li>
+<li><a href='./tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></li>
+<li><a href='./tags/maximum likelihood.html'>maximum likelihood</a></li>
+<li><a href='./tags/naive bayes.html'>naive bayes</a></li>
+<li><a href='./tags/regularization.html'>regularization</a></li>
+</ul>
+</div>
+
+
+<div class="tagset">
+    <h2>All Tags</h2>
+    <p>All problem types.</p>
+    <p>
+        <a href="./all.html">See all problems in this set</a>, or
+        choose a tag below to view only those problems.
+    </p>
+<ul>
+<li><a href='./tags/Gaussians.html'>Gaussians</a></li>
+<li><a href='./tags/SVMs.html'>SVMs</a></li>
+<li><a href='./tags/bayes classifier.html'>bayes classifier</a></li>
+<li><a href='./tags/bayes error.html'>bayes error</a></li>
+<li><a href='./tags/computing loss.html'>computing loss</a></li>
+<li><a href='./tags/conditional independence.html'>conditional independence</a></li>
+<li><a href='./tags/convexity.html'>convexity</a></li>
+<li><a href='./tags/covariance.html'>covariance</a></li>
+<li><a href='./tags/density estimation.html'>density estimation</a></li>
+<li><a href='./tags/empirical risk minimization.html'>empirical risk minimization</a></li>
+<li><a href='./tags/feature maps.html'>feature maps</a></li>
+<li><a href='./tags/gradient descent.html'>gradient descent</a></li>
+<li><a href='./tags/gradients.html'>gradients</a></li>
+<li><a href='./tags/histogram estimators.html'>histogram estimators</a></li>
+<li><a href='./tags/kernel ridge regression.html'>kernel ridge regression</a></li>
+<li><a href='./tags/least squares.html'>least squares</a></li>
+<li><a href='./tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></li>
+<li><a href='./tags/linear prediction functions.html'>linear prediction functions</a></li>
+<li><a href='./tags/linear regression.html'>linear regression</a></li>
+<li><a href='./tags/maximum likelihood.html'>maximum likelihood</a></li>
+<li><a href='./tags/maxium likelihood.html'>maxium likelihood</a></li>
+<li><a href='./tags/naive bayes.html'>naive bayes</a></li>
+<li><a href='./tags/nearest neighbor.html'>nearest neighbor</a></li>
+<li><a href='./tags/object type.html'>object type</a></li>
+<li><a href='./tags/perceptrons.html'>perceptrons</a></li>
+<li><a href='./tags/regularization.html'>regularization</a></li>
+<li><a href='./tags/subgradients.html'>subgradients</a></li>
+</ul>
+</div>
+
+</div>
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

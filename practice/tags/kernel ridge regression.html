@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "kernel ridge regression"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #014</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\nvec{x}{1} = (1, 2, 0)^T\)</span>, <span class="math">\(\nvec{x}{2} = (-1, -1, -1)^T\)</span>, <span class="math">\(\nvec{x}{3} = (2, 2, 0)^T\)</span>, <span class="math">\(\nvec{x}{4} = (0, 2, 0)\)</span>.</p>
+<p>Suppose a prediction function <span class="math">\(H(\vec x)\)</span> is learned using kernel ridge regression on the above data set using the kernel <span class="math">\(\kappa(\vec x, \vec x')
+    = (1 + \vec x \cdot\vec x')^2\)</span> and regularization parameter <span class="math">\(\lambda = 3\)</span>. Suppose that <span class="math">\(\vec\alpha = (1, 0, -1, 2)^T\)</span> is the solution of the dual problem.</p>
+<p>Let <span class="math">\(\vec x = (0, 1, 0)^T\)</span> be a new point. What is <span class="math">\(H(\vec x)\)</span>?</p>
+<details>
+    <summary>Solution</summary>
+<p>18</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #016</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\(\{\nvec{x}{i}, y_i\}\)</span> be a data set of <span class="math">\(n\)</span> points, with each <span class="math">\(\nvec{x}{i}\in\mathbb R^d\)</span>. Recall that the solution to the kernel ridge regression problem is <span class="math">\(\vec\alpha = (K + n \lambda I)^{-1}\vec y\)</span>, where <span class="math">\(K\)</span> is the kernel matrix, <span class="math">\(I\)</span> is the identity matrix, <span class="math">\(\lambda > 0\)</span> is a regularization parameter, and <span class="math">\(\vec y = (y_1, \ldots, y_n)^T\)</span>.</p>
+<p>Suppose kernel ridge regression is performed with a kernel <span class="math">\(\kappa\)</span> that is a kernel for a feature map <span class="math">\(\vec\phi : \mathbb R^d \to\mathbb R^k\)</span>.</p>
+<p>What is the size of the kernel matrix, <span class="math">\(K\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(d \times d\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(k \times k\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(n \times n\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(n \times d\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>The kernel matrix is of size <span class="math">\(n \times n\)</span>.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #030</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set: <span class="math">\(\nvec{x}{1} = (1, 0, 2)^T\)</span><span class="math">\(\nvec{x}{2} = (-1, 0, -1)^T\)</span><span class="math">\(\nvec{x}{3} = (1, 2, 1)^T\)</span><span class="math">\(\nvec{x}{4} = (1, 1, 0)^T\)</span> Suppose a prediction function <span class="math">\(H(\vec x)\)</span> is learned using kernel ridge regression on the above data set using the kernel <span class="math">\(\kappa(\vec x, \vec x')
+    = (1 + \vec x \cdot\vec x')^2\)</span> and regularization parameter <span class="math">\(\lambda = 3\)</span>. Suppose that <span class="math">\(\vec\alpha = (-1, -2, 0, 2)^T\)</span> is the solution of the dual problem.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the (2,3) entry of the kernel matrix?</p>
+<p><span class="math">\(K_{23} = \)</span>
+<span class="inline-response-box">
+    <span id="answer-7b735195-f081-423b-a063-d3693c2063d9" style="display: none">1</span>
+    <span id="button-7b735195-f081-423b-a063-d3693c2063d9">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-7b735195-f081-423b-a063-d3693c2063d9').style.display = 'inline-block';
+                document.getElementById('button-7b735195-f081-423b-a063-d3693c2063d9').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Let <span class="math">\(\vec x = (1, 1, 0)^T\)</span> be a new point. What is <span class="math">\(H(\vec x)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e6a168a2-2b7d-46ca-b9aa-40bfafe59bc8" style="display: none">14</span>
+    <span id="button-e6a168a2-2b7d-46ca-b9aa-40bfafe59bc8">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e6a168a2-2b7d-46ca-b9aa-40bfafe59bc8').style.display = 'inline-block';
+                document.getElementById('button-e6a168a2-2b7d-46ca-b9aa-40bfafe59bc8').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #092</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose Gaussian kernel ridge regression is used to train a model on the following data set of <span class="math">\((x_i, y_i)\)</span> pairs, using a kernel width parameter of <span class="math">\(\gamma = 1\)</span> and a regularization parameter of <span class="math">\(\lambda = 0\)</span>:</p>
+<center><div class="image"><img src="../images/092/table.png" /></div></center>
+<p>Let <span class="math">\(\vec\alpha\)</span> be the solution to the dual problem. What will be the sign of <span class="math">\(\alpha_5\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Positive</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Negative</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Negative. Video explanation: https://youtu.be/K_1cxeQAkdk</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #095</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a prediction function <span class="math">\(H(\vec x)\)</span> is trained using kernel ridge regression on the data below using regularization parameter <span class="math">\(\lambda = 4\)</span> and kernel <span class="math">\(\kappa(\vec x, \vec x') = (1 + \vec x \cdot\vec x')^2\)</span>:</p>
+<p><span class="math">\(\nvec{x}{1} = (1, 2, 0)\)</span>, <span class="math">\(y_1 = 1\)</span><span class="math">\(\nvec{x}{2} = (0, 1, 2)\)</span>, <span class="math">\(y_2 = -1\)</span><span class="math">\(\nvec{x}{3} = (2, 0, 2)\)</span>, <span class="math">\(y_3 = 1\)</span><span class="math">\(\nvec{x}{4} = (1, 0, 1)\)</span>, <span class="math">\(y_4 = -1\)</span><span class="math">\(\nvec{x}{5} = (0, 0, 0)\)</span>, <span class="math">\(y_5 = 1\)</span> Suppose the solution to the dual problem is <span class="math">\(\vec\alpha = (2, 0, 1, -1, 2)\)</span>.</p>
+<p>Consider a new point <span class="math">\(\vec x = (1, 1, 1)\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-7aaf8c1f-1448-4db7-8f8c-d924754cf122" style="display: none">50</span>
+    <span id="button-7aaf8c1f-1448-4db7-8f8c-d924754cf122">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-7aaf8c1f-1448-4db7-8f8c-d924754cf122').style.display = 'inline-block';
+                document.getElementById('button-7aaf8c1f-1448-4db7-8f8c-d924754cf122').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/miyY9BeL0QI</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #109</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following data set of four points whose feature vectors are in <span class="math">\(\mathbb{R}^2\)</span> and whose labels are in <span class="math">\(\{-1,1\}\)</span>:</p>
+<center><div class="image"><img src="../images/109/table.png" /></div></center>
+<p>For convenience, we've plotted the data below. Each point is labeled with either the positive class (denoted by <span class="math">\(\times\)</span>) or the negative class (denoted by <span class="math">\(\bullet\)</span>).</p>
+<center><div class="image"><img src="../images/109/fig.png" /></div></center>
+<p>Suppose an unnamed kernel classifier <span class="math">\(H(\vec x) = \sum_{i=1}^n \alpha_i
+    \kappa(\nvec{x}{x}, \vec x)\)</span> has been trained on this data using a (spherical) Gaussian kernel and kernel width parameter <span class="math">\(\gamma = 1\)</span>. Suppose the solution to the dual problem is found to be <span class="math">\(\vec\alpha = (1, 1, 1, -3)^T\)</span>.</p>
+<p>What class will the classifier predict for the point <span class="math">\((2,2)\)</span>? For convenience, we've plotted this point on the graph above as a question mark.</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>+1 (the <span class="math">\(\times\)</span> class)</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>-1 (the <span class="math">\(\bullet\)</span> class)</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>-1 (the <span class="math">\(\bullet\)</span> class).</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #112</h2>
+        <p>Tags: <a href='../tags/kernel ridge regression.html'>kernel ridge regression</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a prediction function <span class="math">\(H(\vec x)\)</span> is trained using kernel ridge regression on the data below using regularization parameter <span class="math">\(\lambda = 4\)</span> and kernel <span class="math">\(\kappa(\vec x, \vec x') = (1 + \vec x \cdot\vec x')^2\)</span>:</p>
+<p><span class="math">\(\nvec{x}{1} = (0, 1, 1)\)</span>, <span class="math">\(y_1 = 1\)</span><span class="math">\(\nvec{x}{2} = (1, 1, 1)\)</span>, <span class="math">\(y_2 = -1\)</span><span class="math">\(\nvec{x}{3} = (2, 2, 2)\)</span>, <span class="math">\(y_3 = 1\)</span><span class="math">\(\nvec{x}{4} = (1, 1, 0)\)</span>, <span class="math">\(y_4 = -1\)</span><span class="math">\(\nvec{x}{5} = (0, 1, 0)\)</span>, <span class="math">\(y_5 = 1\)</span> Suppose the solution to the dual problem is <span class="math">\(\vec\alpha = (-1, 1, 0, 3, -2)\)</span>.</p>
+<p>Consider a new point <span class="math">\(\vec x = (2, 0, 1)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e1e8e1ba-f2b6-4783-a380-27c2e7f6114b" style="display: none">37</span>
+    <span id="button-e1e8e1ba-f2b6-4783-a380-27c2e7f6114b">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e1e8e1ba-f2b6-4783-a380-27c2e7f6114b').style.display = 'inline-block';
+                document.getElementById('button-e1e8e1ba-f2b6-4783-a380-27c2e7f6114b').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

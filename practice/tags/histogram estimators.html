@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "histogram estimators"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #034</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set of ten points shown below:</p>
+<center><div class="image"><img src="../images/034/data.png" /></div></center>
+<p>Suppose this data is used to build a histogram density estimator, <span class="math">\(f\)</span>, with bins: <span class="math">\([0,2), [2, 6), [6, 10)\)</span>. Note that the bins are not evenly sized.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is <span class="math">\(f(1.5)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-bbb1ffdb-85ae-46c3-bf49-6f0e03666620" style="display: none">0.2</span>
+    <span id="button-bbb1ffdb-85ae-46c3-bf49-6f0e03666620">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-bbb1ffdb-85ae-46c3-bf49-6f0e03666620').style.display = 'inline-block';
+                document.getElementById('button-bbb1ffdb-85ae-46c3-bf49-6f0e03666620').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is <span class="math">\(f(7)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-2af2eda4-5892-4be2-b51b-f2c5a036ab0f" style="display: none">.05</span>
+    <span id="button-2af2eda4-5892-4be2-b51b-f2c5a036ab0f">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-2af2eda4-5892-4be2-b51b-f2c5a036ab0f').style.display = 'inline-block';
+                document.getElementById('button-2af2eda4-5892-4be2-b51b-f2c5a036ab0f').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #035</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider this data set of points <span class="math">\(x\)</span> from two classes <span class="math">\(Y = 1\)</span> and <span class="math">\(Y = 0\)</span>.</p>
+<center><div class="image"><img src="../images/035/data.png" /></div></center>
+<p>Suppose a histogram estimator with bins <span class="math">\([0,1)\)</span>, <span class="math">\([1, 2)\)</span>, <span class="math">\([2, 3)\)</span> is used to estimate the densities <span class="math">\(p_1(x \given Y = 1)\)</span> and <span class="math">\(p_0(x \given Y = 0)\)</span>, and these estimates are used in the Bayes classifier to make a prediction.</p>
+<p>What will be the predicted class of a new point, <span class="math">\(x = 2.2\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 0.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #036</h2>
+        <p>Tags: <a href='../tags/density estimation.html'>density estimation</a>, <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a density estimate <span class="math">\(f : \mathbb R^3 \to\mathbb R^1\)</span> is made using histogram estimators with bins having a length of 2 units, a width of 3 units, and a height of 1 unit.</p>
+<p>What is the largest value that <span class="math">\(f(\vec x)\)</span> can possibly have?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-60371bcd-01c2-4188-be2c-9cf1b4e9d662" style="display: none">1/6</span>
+    <span id="button-60371bcd-01c2-4188-be2c-9cf1b4e9d662">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-60371bcd-01c2-4188-be2c-9cf1b4e9d662').style.display = 'inline-block';
+                document.getElementById('button-60371bcd-01c2-4188-be2c-9cf1b4e9d662').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #048</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider this data set of points <span class="math">\(x\)</span> from two classes <span class="math">\(Y = 1\)</span> and <span class="math">\(Y = 0\)</span>.</p>
+<center><div class="image"><img src="../images/048/data.png" /></div></center>
+<p>Suppose a histogram estimator with bins <span class="math">\([0,2)\)</span>, <span class="math">\([2, 4)\)</span>, <span class="math">\([4, 6)\)</span> is used to estimate the densities <span class="math">\(p_1(x \given Y = 1)\)</span> and <span class="math">\(p_0(x \given Y = 0)\)</span>.</p>
+<p>What will be the predicted class-conditional density for class 0 at a new point, <span class="math">\(x = 2.2\)</span>? That is, what is the estimated <span class="math">\(p_0(2.2 \given Y = 0)\)</span>?</p>
+<details>
+    <summary>Solution</summary>
+<p>1/6.</p>
+<p>When estimating the conditional density, we look only at the six points in class zero. Two of these fall into the bin, and the bin width is 2, so the estimated density is:</p>
+<div class="math">\[\frac{2}{6 \times 2} = \frac{1}{6}.
+        \]</div>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #049</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose <span class="math">\(\mathcal D\)</span> is a data set of 100 points. Suppose a density estimate <span class="math">\(f : \mathbb R^3 \to\mathbb R^1\)</span> is constructed from <span class="math">\(\mathcal D\)</span> using histogram estimators with bins having a length of 2 units, a width of 2 units, and a height of 2 units.</p>
+<p>The density estimate within a particular bin of the histogram is 0.1. How many data points from <span class="math">\(\mathcal D\)</span> fall within that histogram bin?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-595f137d-4d9b-490b-82f7-67b5ccd1febc" style="display: none">80</span>
+    <span id="button-595f137d-4d9b-490b-82f7-67b5ccd1febc">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-595f137d-4d9b-490b-82f7-67b5ccd1febc').style.display = 'inline-block';
+                document.getElementById('button-595f137d-4d9b-490b-82f7-67b5ccd1febc').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #094</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>In this problem, consider the following labeled data set of 15 points, 5 from Class 1 and 10 from Class 0.</p>
+<center><div class="image"><img src="../images/094/table.png" /></div></center>
+<p>Suppose the class conditional densities are estimated using a histogram estimator with bins: <span class="math">\([0, 3), [3, 5), [5, 6),\)</span> and <span class="math">\([6, 10)\)</span>. Note that the bins are not all the same width!</p>
+<p>In all of the parts below, you may write your answer either as a decimal or as a fraction.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the estimate of the Class 0 density at <span class="math">\(x = 3.5\)</span>? That is, what is the estimate for <span class="math">\(p(3.5 \given Y = 0)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-8e6f52ef-220a-4c5e-86b8-f094acbfc835" style="display: none">0.1</span>
+    <span id="button-8e6f52ef-220a-4c5e-86b8-f094acbfc835">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-8e6f52ef-220a-4c5e-86b8-f094acbfc835').style.display = 'inline-block';
+                document.getElementById('button-8e6f52ef-220a-4c5e-86b8-f094acbfc835').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Using the same histogram estimator, what is the estimate of <span class="math">\(\pr(Y = 1 \given x = 3.5)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-7248e256-ec56-44dd-ae73-1c3cf6cdcee8" style="display: none">0.5</span>
+    <span id="button-7248e256-ec56-44dd-ae73-1c3cf6cdcee8">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-7248e256-ec56-44dd-ae73-1c3cf6cdcee8').style.display = 'inline-block';
+                document.getElementById('button-7248e256-ec56-44dd-ae73-1c3cf6cdcee8').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>Video explanation: https://youtu.be/0WFYpsDapC8</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #104</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Let <span class="math">\((\nvec{x}{1}, y_1), \ldots, (\nvec{x}{n}, y_n)\)</span> be a set of <span class="math">\(n\)</span> points in a binary classification problem, where <span class="math">\(\nvec{x}{i}\in\mathbb{R}^2\)</span> and <span class="math">\(y_i \in\{0, 1\}\)</span>.</p>
+<p>Suppose a classifier is trained by estimating the class-conditional densities with histograms using rectangular bins and applying the Bayes classification rule.</p>
+<p>True or False: it is always possible to achieve a 100\% training accuracy with this classifier by choosing the rectangular bins to be sufficiently small. You may assume that no two points <span class="math">\(\nvec{x}{i}\)</span> and <span class="math">\(\nvec{x}{j}\)</span> are identical.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>True. Video explanation: https://youtu.be/A1fBjOnjs5E</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #111</h2>
+        <p>Tags: <a href='../tags/bayes classifier.html'>bayes classifier</a>, <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>In this problem, consider the following labeled data set of 19 points, 7 from Class 1 and 12 from Class 0.</p>
+<center><div class="image"><img src="../images/111/table.png" /></div></center>
+<p>Suppose the class conditional densities are estimated using a histogram estimator with bins: <span class="math">\([0, .25), [.25, .5), [.5, 75),\)</span> and <span class="math">\([.75, 1.0)\)</span>.</p>
+<p>In all of the parts below, you may write your answer either as a decimal or as a fraction.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the estimate of the Class 0 density at <span class="math">\(x = 0.6\)</span>? That is, what is the estimate <span class="math">\(\hat p(0.6 \given Y = 0)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-684bf718-c89c-4969-ba00-a260e52073c7" style="display: none">5/3</span>
+    <span id="button-684bf718-c89c-4969-ba00-a260e52073c7">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-684bf718-c89c-4969-ba00-a260e52073c7').style.display = 'inline-block';
+                document.getElementById('button-684bf718-c89c-4969-ba00-a260e52073c7').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>Using the same histogram estimator, what is the estimate <span class="math">\(\hat\pr(Y = 1 \given x = 0.35)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-73fb2af2-417b-4c9c-8a1a-4376e4a0717d" style="display: none">3/5 = 0.6</span>
+    <span id="button-73fb2af2-417b-4c9c-8a1a-4376e4a0717d">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-73fb2af2-417b-4c9c-8a1a-4376e4a0717d').style.display = 'inline-block';
+                document.getElementById('button-73fb2af2-417b-4c9c-8a1a-4376e4a0717d').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>What is the estimate of the marginal density of <span class="math">\(x\)</span> at <span class="math">\(x = 0.1\)</span>? That is, what is <span class="math">\(\hat p(0.1)\)</span>?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-ae7ecbf8-c191-40ef-9ea9-da8ef4fa1b22" style="display: none">7/(19*0.25) = 1.47</span>
+    <span id="button-ae7ecbf8-c191-40ef-9ea9-da8ef4fa1b22">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-ae7ecbf8-c191-40ef-9ea9-da8ef4fa1b22').style.display = 'inline-block';
+                document.getElementById('button-ae7ecbf8-c191-40ef-9ea9-da8ef4fa1b22').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 4)</h3>
+<p>Let <span class="math">\(\hat p(x \given Y = 0)\)</span> be the histogram density estimate for the Class 0 conditional density. What is</p>
+<div class="math">\[\int_0^1 \hat p(x \given Y = 0) \, dx?
+            \]</div>
+<p>
+<span class="inline-response-box">
+    <span id="answer-884f4d74-be30-4c87-93d0-943e8c35894a" style="display: none">1</span>
+    <span id="button-884f4d74-be30-4c87-93d0-943e8c35894a">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-884f4d74-be30-4c87-93d0-943e8c35894a').style.display = 'inline-block';
+                document.getElementById('button-884f4d74-be30-4c87-93d0-943e8c35894a').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #119</h2>
+        <p>Tags: <a href='../tags/histogram estimators.html'>histogram estimators</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the following data set of 14 points in <span class="math">\(\mathbb R^2\)</span>. Each point has a label in <span class="math">\(\{ 1, -1 \}\)</span>. Points from Class 1 are marked with <span class="math">\(\times\)</span> and points from Class -1 are marked with <span class="math">\(\bullet\)</span>.</p>
+<center><div class="image"><img src="../images/119/fig.png" /></div></center>
+<p>Suppose the class-conditional density estimates are computed from this data using a histogram density estimator using the <span class="math">\(1 \times 1\)</span> bins shown in the figure above.</p>
+<p>If these estimates are used in place of the true class-conditional densities in the Bayes classifier, what will be the training error of the classifier? That is, what percentage of the data above will be misclassified? You may leave your answer as a fraction or a decimal.</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-1d010b45-80f1-4fc4-8213-b1609963bb16" style="display: none">4/14 = .2857</span>
+    <span id="button-1d010b45-80f1-4fc4-8213-b1609963bb16">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-1d010b45-80f1-4fc4-8213-b1609963bb16').style.display = 'inline-block';
+                document.getElementById('button-1d010b45-80f1-4fc4-8213-b1609963bb16').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

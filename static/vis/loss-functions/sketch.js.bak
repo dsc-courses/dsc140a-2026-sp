@@ -1,0 +1,483 @@
+PASTELRED = "#d20000";
+PASTELBLUE = "#007aff";
+PASTELPURPLE = "#6E66BA";
+PASTELYELLOW = "#FBC05E";
+PASTELGREEN = "#8fc34f";
+
+SNAP = false;
+
+LOSS = "hinge";
+
+let figure;
+
+let data_x = [];
+let data_y = [];
+let labels = [];
+
+let w_0 = 0;
+let w_1 = 1;
+let w_2 = 0;
+
+function reset() {
+  data_x = [1, 2, 3, -4, -2, -3];
+  data_y = [1, -2, -3, 4, 2, -3];
+  labels = [1, 1, 1, -1, -1, -1];
+
+  w_0 = 0;
+  w_1 = 1;
+  w_2 = 0;
+}
+
+let dragging_index = -1;
+
+function norm(x, y) {
+  return Math.sqrt(x * x + y * y);
+}
+
+function h(x, y) {
+  // the hypothesis function
+  return w_0 + w_1 * x + w_2 * y;
+}
+
+function perceptron_loss(ix) {
+  x = data_x[ix];
+  y = data_y[ix];
+  return Math.max(0, -labels[ix] * h(x, y));
+}
+
+function square_loss(ix) {
+  x = data_x[ix];
+  y = data_y[ix];
+  return Math.pow(labels[ix] - h(x, y), 2);
+}
+
+function hinge_loss(ix) {
+  x = data_x[ix];
+  y = data_y[ix];
+  return Math.max(0, 1 - labels[ix] * h(x, y));
+}
+
+function get_loss_function() {
+  if (LOSS === "perceptron") {
+    return perceptron_loss;
+  } else if (LOSS === "square") {
+    return square_loss;
+  } else if (LOSS === "hinge") {
+    return hinge_loss;
+  }
+}
+
+function baseline_max_loss() {
+  if (LOSS === "perceptron") {
+    return 5;
+  } else if (LOSS === "square") {
+    return 16;
+  } else if (LOSS === "hinge") {
+    return 4;
+  }
+}
+
+function subgradient(ix) {
+  // determine the subgradient of the loss function at the data point ix
+  // returns a 3-tuple
+  x = data_x[ix];
+  y = data_y[ix];
+  label = labels[ix];
+
+  if (LOSS === "perceptron") {
+    if (label * h(x, y) < 1) {
+      return [-label, -label * x, -label * y];
+    } else {
+      return [0, 0, 0];
+    }
+  } else if (LOSS === "square") {
+    return [
+      2 * label * (label - h(x, y)),
+      2 * label * (label - h(x, y)) * x,
+      2 * label * (label - h(x, y)) * y,
+    ];
+  } else if (LOSS === "hinge") {
+    if (label * h(x, y) < 1) {
+      return [-label, -label * x, -label * y];
+    } else {
+      return [0, 0, 0];
+    }
+  }
+}
+
+function optimize(sketch) {
+  // runs gradient descent to determine w_0, w_1, and w_2
+  let initial_learning_rate = 0.01;
+  let max_iterations = 1000;
+  let epsilon = 0.0001;
+
+  let loss_function = get_loss_function();
+
+  let gw_0 = w_0;
+  let gw_1 = w_1;
+  let gw_2 = w_2;
+
+  for (let i = 0; i < max_iterations; i++) {
+    learning_rate = initial_learning_rate / Math.sqrt(i + 1);
+
+    let gradient = [0, 0, 0];
+    for (let j = 0; j < data_x.length; j++) {
+      let subgrad = subgradient(j);
+      gradient[0] += subgrad[0];
+      gradient[1] += subgrad[1];
+      gradient[2] += subgrad[2];
+    }
+
+    gradient[0] /= data_x.length;
+    gradient[1] /= data_x.length;
+    gradient[2] /= data_x.length;
+
+    if (norm(gradient[0], gradient[1]) < epsilon) {
+      break;
+    }
+
+    console.log(learning_rate, gradient[0], gradient[1], gradient[2]);
+
+    gw_0 -= learning_rate * gradient[0];
+    gw_1 -= learning_rate * gradient[1];
+    gw_2 -= learning_rate * gradient[2];
+  }
+}
+
+function find_data_point(x, y) {
+  // if (x, y) is within a data point, return the index of that data point
+  // otherwise, return -1
+  for (let i = 0; i < data_x.length; i++) {
+    if (norm(x - data_x[i], y - data_y[i]) < 0.3) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+function evaluate_on_grid(h, x, y) {
+  // evaluates the function h on the grid resulting from the cartesian product of x and y
+  // returns a 2D array of the results
+  let results = [];
+  for (let i = 0; i < x.length; i++) {
+    results.push([]);
+    for (let j = 0; j < y.length; j++) {
+      results[i].push(h(x[i], y[j]));
+    }
+  }
+
+  return results;
+}
+
+// make a class representing the grid
+class GridPlot {
+  constructor(sketch) {
+    this.sketch = sketch;
+  }
+
+  sx(x) {
+    // convert x from plot coordinates to screen coordinates, where
+    // (0, 0) is the center of the canvas
+    return x * 50 + 300;
+  }
+
+  sy(y) {
+    // convert y from plot coordinates to screen coordinates, where
+    // (0, 0) is the center of the canvas
+    return -y * 50 + 300;
+  }
+
+  px(x) {
+    // convert x from screen coordinates to plot coordinates
+    return (x - 300) / 50;
+  }
+
+  py(y) {
+    // convert y from screen coordinates to plot coordinates
+    return -(y - 300) / 50;
+  }
+
+  draw_grid() {
+    // Draws a grid on the canvas
+    this.sketch.stroke(210);
+    this.sketch.strokeWeight(2);
+    for (let i = 50; i < 600; i += 50) {
+      this.sketch.line(i, 50, i, 551);
+      this.sketch.line(50, i, 551, i);
+    }
+  }
+
+  stroke_color_from_loss(i) {
+    // determines the stroke color of a data point based on the loss on
+    // that data point. blue is low loss, red is high loss
+    let loss_function = get_loss_function();
+    let max_loss = baseline_max_loss();
+    let loss = loss_function(i);
+    let alpha = Math.min(1, loss / max_loss);
+
+    let color = this.sketch.color(PASTELRED);
+
+    return this.sketch.lerpColor(this.sketch.color("white"), color, alpha);
+
+    return color;
+  }
+
+  stroke_weight_from_loss(i) {
+    // determines the stroke weight of a data point based on the loss on
+    // that data point.
+    return 10;
+  }
+
+  draw_tooltip(i) {
+    // draw a rounded rectangle with the loss value
+    let x = this.sx(data_x[i]);
+    let y = this.sy(data_y[i]);
+
+    // offset
+    x += 30;
+    y += 30;
+
+    let loss_function = get_loss_function();
+    let loss = loss_function(i);
+    let max_loss = baseline_max_loss();
+    let alpha = Math.min(1, loss / max_loss);
+
+    let color = this.sketch.color("white");
+    color.setAlpha(255);
+    this.sketch.fill(color);
+    this.sketch.stroke("black");
+    this.sketch.strokeWeight(2);
+    this.sketch.rect(x - 30, y - 15, 60, 30, 10);
+
+    this.sketch.fill("black");
+    this.sketch.noStroke();
+    this.sketch.textSize(12);
+    this.sketch.textAlign(this.sketch.CENTER, this.sketch.CENTER);
+    this.sketch.text("loss: " + loss.toFixed(1), x, y);
+  }
+
+  draw_data_point(i) {
+    // draw a data point using plot coordinates
+    let x = this.sx(data_x[i]);
+    let y = this.sy(data_y[i]);
+    let label = labels[i];
+
+    let mouse_over = norm(x - this.sketch.mouseX, y - this.sketch.mouseY) < 14;
+
+    let dark_color = this.sketch.color(label === 1 ? PASTELYELLOW : PASTELBLUE);
+    let light_color = this.sketch.lerpColor(
+      dark_color,
+      this.sketch.color("white"),
+      0.5,
+    );
+
+    let fill_color = mouse_over ? light_color : dark_color;
+    let stroke_color = this.stroke_color_from_loss(i);
+    let stroke_weight = this.stroke_weight_from_loss(i);
+
+    // draw a circle behind the data point to act as a stroke
+    this.sketch.noStroke();
+    this.sketch.fill(stroke_color);
+    this.sketch.circle(x, y, 25 + stroke_weight);
+
+    // draw the data point
+    this.sketch.noStroke();
+    this.sketch.fill(fill_color);
+    this.sketch.circle(x, y, 25);
+
+    // write the labesketcl
+    this.sketch.fill("black");
+    this.sketch.textSize(20);
+    this.sketch.textAlign(this.sketch.CENTER, this.sketch.CENTER);
+    this.sketch.noStroke();
+    if (label === 1) {
+      this.sketch.text("+", x, y);
+    } else {
+      this.sketch.text("-", x, y);
+    }
+
+    if (mouse_over) {
+      this.draw_tooltip(i);
+    }
+  }
+
+  draw_decision_boundary(w_0, w_1, w_2, offset = 0, color = "black") {
+    // find the y value when x = -5
+    let x1 = -5;
+    let y1 = (offset - w_0 - w_1 * -5) / w_2;
+
+    if (y1 > 5) {
+      y1 = 5;
+      x1 = (offset - w_0 - w_2 * 5) / w_1;
+    } else if (y1 < -5) {
+      y1 = -5;
+      x1 = (offset - w_0 - w_2 * -5) / w_1;
+    }
+
+    // find the y value when x = 5
+    let x2 = 5;
+    let y2 = (offset - w_0 - w_1 * 5) / w_2;
+
+    if (y2 > 5) {
+      y2 = 5;
+      x2 = (offset - w_0 - w_2 * 5) / w_1;
+    } else if (y2 < -5) {
+      y2 = -5;
+      x2 = (offset - w_0 - w_2 * -5) / w_1;
+    }
+
+    x1 = this.sx(x1);
+    y1 = this.sy(y1);
+    x2 = this.sx(x2);
+    y2 = this.sy(y2);
+    this.sketch.stroke(color);
+    this.sketch.strokeWeight(4);
+
+    if (offset !== 0) {
+      // dashed line
+      this.sketch.drawingContext.setLineDash([10, 15]);
+    } else {
+      this.sketch.drawingContext.setLineDash([]);
+    }
+
+    this.sketch.line(x1, y1, x2, y2);
+
+    // clear the dash
+    this.sketch.drawingContext.setLineDash([]);
+  }
+}
+
+function sketch_data(sketch) {
+  let plot = new GridPlot(sketch);
+
+  let loss_dropdown;
+
+  sketch.setup = function () {
+    sketch.createCanvas(600, 600);
+    sketch.background("white");
+
+    reset();
+
+    loss_dropdown = sketch.select("#loss");
+
+    loss_dropdown.changed(() => {
+      sketch.mouseIsPressed = false;
+    });
+
+    let reset_button = sketch.select("#reset");
+    reset_button.mousePressed(() => {
+      reset();
+
+      // set the sliders to the default values
+      sketch.select("#w0").value(w_0);
+      sketch.select("#w1").value(w_1);
+      sketch.select("#w2").value(w_2);
+    });
+
+    let optimize_button = sketch.select("#minimize");
+
+    optimize_button.mousePressed(() => {
+      optimize(sketch);
+    });
+  };
+
+  sketch.draw = function () {
+    sketch.background("white");
+    plot.draw_grid(sketch);
+
+    if (!sketch.mouseIsPressed) {
+      dragging_index = -1;
+    }
+
+    // get the loss function
+    LOSS = loss_dropdown.value();
+
+    // get the weights from the sliders
+    w_0 = sketch.select("#w0").value();
+    w_1 = sketch.select("#w1").value();
+    w_2 = sketch.select("#w2").value();
+
+    plot.draw_decision_boundary(w_0, w_1, w_2);
+    plot.draw_decision_boundary(
+      w_0,
+      w_1,
+      w_2,
+      (offset = 1),
+      (color = PASTELYELLOW),
+    );
+    plot.draw_decision_boundary(
+      w_0,
+      w_1,
+      w_2,
+      (offset = -1),
+      (color = PASTELBLUE),
+    );
+
+    for (let i = 0; i < data_x.length; i++) {
+      plot.draw_data_point(i);
+    }
+  };
+
+  // on mouse click
+  sketch.mouseDragged = function () {
+    if (dragging_index === -1) {
+      dragging_index = find_data_point(
+        plot.px(sketch.mouseX),
+        plot.py(sketch.mouseY),
+      );
+    }
+    if (dragging_index === -1) {
+      return;
+    }
+
+    // round to the nearest 50
+    if (SNAP) {
+      data_x[dragging_index] = plot.px(Math.round(sketch.mouseX / 25) * 25);
+      data_y[dragging_index] = plot.py(Math.round(sketch.mouseY / 25) * 25);
+    } else {
+      data_x[dragging_index] = plot.px(sketch.mouseX);
+      data_y[dragging_index] = plot.py(sketch.mouseY);
+    }
+
+    // don't allow points to go off the canvas
+    data_x[dragging_index] = Math.max(-5, Math.min(5, data_x[dragging_index]));
+    data_y[dragging_index] = Math.max(-5, Math.min(5, data_y[dragging_index]));
+  };
+
+  sketch.mousePressed = function () {
+    // if shift is pressed
+    if (sketch.keyIsDown(sketch.SHIFT)) {
+      // if a data point is clicked, remove it
+      // otherwise, add a data point
+      let i = find_data_point(plot.px(sketch.mouseX), plot.py(sketch.mouseY));
+
+      if (i !== -1) {
+        // remove the data point
+        data_x.splice(i, 1);
+        data_y.splice(i, 1);
+        labels.splice(i, 1);
+      } else {
+        data_x.push(plot.px(sketch.mouseX));
+        data_y.push(plot.py(sketch.mouseY));
+
+        // get the label from the mouse position
+        h_value = h(data_x[data_x.length - 1], data_y[data_y.length - 1]);
+        if (h_value > 0) {
+          labels.push(1);
+        } else {
+          labels.push(-1);
+        }
+      }
+    }
+
+    // if alt is pressed, change the label
+    if (sketch.keyIsDown(sketch.ALT)) {
+      let i = find_data_point(plot.px(sketch.mouseX), plot.py(sketch.mouseY));
+      if (i !== -1) {
+        labels[i] *= -1;
+      }
+    }
+  };
+}
+
+new p5(sketch_data, "canvas-data");

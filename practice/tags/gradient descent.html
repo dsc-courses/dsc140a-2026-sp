@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "gradient descent"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #009</h2>
+        <p>Tags: <a href='../tags/gradient descent.html'>gradient descent</a>, <a href='../tags/perceptrons.html'>perceptrons</a>, <a href='../tags/gradients.html'>gradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose gradient descent is to be used to train a perceptron classifier <span class="math">\(H(\vec x; \vec w)\)</span> on a data set of <span class="math">\(n\)</span> points, <span class="math">\(\{\nvec{x}{i}, y_i \}\)</span>. Recall that each iteration of gradient descent takes a step in the opposite direction of the ``gradient''.</p>
+<p>Which gradient is being referred to here?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the empirical risk with respect to <span class="math">\(\vec w\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the empirical risk with respect to <span class="math">\(\nvec{x}{i}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the perceptron loss with respect to <span class="math">\(\vec w\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of the perceptron loss with respect to <span class="math">\(\nvec{x}{i}\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of <span class="math">\(H\)</span> with respect to <span class="math">\(\vec w\)</span></p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>The gradient of <span class="math">\(H\)</span> with respect to <span class="math">\(\vec x\)</span></p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>The gradient of the empirical risk with respect to <span class="math">\(\vec w\)</span></p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #028</h2>
+        <p>Tags: <a href='../tags/gradient descent.html'>gradient descent</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the function <span class="math">\(f(x, y) = x^2 + xy + y^2\)</span>. Suppose that a single iteration of gradient descent is run on this function with a starting location of <span class="math">\((1, 2)^T\)</span> and a learning rate of <span class="math">\(\eta = 1/10\)</span>. What will be the <span class="math">\(x\)</span> and <span class="math">\(y\)</span> coordinates after this iteration?</p>
+<details>
+    <summary>Solution</summary>
+<p><span class="math">\(x = 0.6\)</span>, <span class="math">\(y = 1.5\)</span></p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #068</h2>
+        <p>Tags: <a href='../tags/gradient descent.html'>gradient descent</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Recall that a subgradient of the absolute loss is:</p>
+<div class="math">\[\begin{cases}
+            \operatorname{Aug}(\vec x), & \text{if } \operatorname{Aug}(\vec x) \cdot \vec w - y > 0,\\
+            -\operatorname{Aug}(\vec x), & \text{if} \operatorname{Aug}(\vec x) \cdot \vec w - y < 0,\\
+            \vec 0, & \text{otherwise}.
+        \end{cases}\]</div>
+<p>Suppose you are running subgradient descent to minimize the risk with respect to the absolute loss in order to train a function <span class="math">\(H(x) = w_0 + w_1 x\)</span> on the following data set:</p>
+<center><div class="image"><img src="../images/068/table.png" /></div></center>
+<p>Suppose that the initial weight vector is <span class="math">\(\vec w = (0, 0)^T\)</span> and that the learning rate <span class="math">\(\eta = 1\)</span>. What will be the weight vector after one iteration of subgradient descent?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-3fff48b5-a2f4-44e1-b1a4-6380663a9fd8" style="display: none"><span class="math">\((1, 2)^T\)</span></span>
+    <span id="button-3fff48b5-a2f4-44e1-b1a4-6380663a9fd8">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-3fff48b5-a2f4-44e1-b1a4-6380663a9fd8').style.display = 'inline-block';
+                document.getElementById('button-3fff48b5-a2f4-44e1-b1a4-6380663a9fd8').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+<details>
+    <summary>Solution</summary>
+<p>To perform subgradient descent, we need to compute the subgradient of the risk. The main thing to remember is that the subgradient of the risk is the <i>average</i> of the subgradient of the loss on each data point.</p>
+<div class="math">\[\newcommand{\Aug}{\operatorname{Aug}}\]</div>
+<p>So to start this problem, calculuate the subgradient of the loss for each of the three points. Our formula for the subgradient of the absolute loss tells us to compute <span class="math">\(\Aug(\vec x) \cdot w - y\)</span> for each point and see if this is positive or negative. If it is positive, the subgradient is <span class="math">\(\Aug(\vec x)\)</span>; if it is negative, the subgradient is <span class="math">\(-\Aug(\vec x)\)</span>.</p>
+<p>Now, the initial weight vector <span class="math">\(\vec w\)</span> was conveniently chosen to be <span class="math">\(\vec 0\)</span>, meaning that <span class="math">\(\operatorname{Aug}(\vec x) \cdot\vec w = 0\)</span> for all of our data points. Therefore, when we compute <span class="math">\(\operatorname{Aug}(\vec x) \cdot\vec w - y\)</span>, we get <span class="math">\(-y\)</span> for every data point, and so we fall into the second case of the subgradient formula for every data point. This means that the subgradient of the loss at each data point is <span class="math">\(-\operatorname{Aug}(\vec x)\)</span>. Or, more concretely, the subgradient of the loss at each of the three data points is:</p>
+<p><span class="math">\((-1, -1)^T\)</span><span class="math">\((-1, -2)^T\)</span><span class="math">\((-1, -3)^T\)</span> This means that the subgradient of the risk is the average of these three:</p>
+<div class="math">\[\frac{1}{3}\left(\begin{bmatrix}-1\\-1\end{bmatrix} +
+                \begin{bmatrix}-1\\-2\end{bmatrix} +
+                \begin{bmatrix}-1\\-3\end{bmatrix}\right)=
+            \begin{bmatrix}-1\\ -2 \end{bmatrix}\]</div>
+<p>The subgradient descent update rule says that <span class="math">\(\vec w^{(1)} = \vec w^{(0)} - \eta\vec g\)</span>, where <span class="math">\(\vec g\)</span> is the subgradient of the risk. The learning rate <span class="math">\(\eta\)</span> was given as 1, so we have <span class="math">\(\vec w^{(1)} = \vec w^{(0)} - \vec g = \vec 0 - \begin{bmatrix}-1\\ -2 \end{bmatrix} = \begin{bmatrix}1\\ 2 \end{bmatrix}\)</span>.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #085</h2>
+        <p>Tags: <a href='../tags/gradient descent.html'>gradient descent</a>, <a href='../tags/subgradients.html'>subgradients</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Recall that a subgradient of the absolute loss is:</p>
+<div class="math">\[\begin{cases}
+            \operatorname{Aug}(\vec x), & \text{if } \operatorname{Aug}(\vec x) \cdot \vec w - y > 0,\\
+            -\operatorname{Aug}(\vec x), & \text{if} \operatorname{Aug}(\vec x) \cdot \vec w - y < 0,\\
+            \vec 0, & \text{otherwise}.
+        \end{cases}\]</div>
+<p>Suppose you are running subgradient descent to minimize the risk with respect to the absolute loss in order to train a function <span class="math">\(H(x) = w_0 + w_1 x\)</span> on the following data set:</p>
+<center><div class="image"><img src="../images/085/table.png" /></div></center>
+<p>Suppose that the initial weight vector is <span class="math">\(\vec w = (0, 0)^T\)</span> and that the learning rate is <span class="math">\(\eta = 1\)</span>. What will be the weight vector after one iteration of subgradient descent?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-cbdf3dec-6d74-448b-b1e7-31cc6cdd1256" style="display: none"><span class="math">\((1, 3)^T\)</span></span>
+    <span id="button-cbdf3dec-6d74-448b-b1e7-31cc6cdd1256">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-cbdf3dec-6d74-448b-b1e7-31cc6cdd1256').style.display = 'inline-block';
+                document.getElementById('button-cbdf3dec-6d74-448b-b1e7-31cc6cdd1256').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "linear and quadratic discriminant analysis"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #056</h2>
+        <p>Tags: <a href='../tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose a data set of points in <span class="math">\(\mathbb R^2\)</span> consists of points from two classes: Class 1 and Class 0. The mean of the points in Class 1 is <span class="math">\((3,0)^T\)</span>, and the mean of points in Class 0 is <span class="math">\((7,0)^T\)</span>. Suppose Linear Discriminant Analysis is performed using the same covariance matrix <span class="math">\(C =
+    \sigma^2 I\)</span> for both classes, where <span class="math">\(\sigma\)</span> is some constant.</p>
+<p>Suppose there were 50 points in Class 1 and 100 points in Class 0.</p>
+<p>Consider a new point, <span class="math">\((5, 0)^T\)</span>, exactly halfway between the class means. What will LDA predict its label to be?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>There is not enough information to decide</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 0.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #099</h2>
+        <p>Tags: <a href='../tags/Gaussians.html'>Gaussians</a>, <a href='../tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose the underlying class-conditional densities in a binary classification problem are known to be multivariate Gaussians.</p>
+<p>Suppose a Quadratic Discriminant Analysis (QDA) classifier using full covariance matrices for each class is trained on a data set of <span class="math">\(n\)</span> points sampled from these densities.</p>
+<p>True or False: As the size of the data set grows (that is, as <span class="math">\(n \to\infty\)</span>), the training error of the QDA classifier must approach zero.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False. Video explanation: https://youtu.be/t40ex-JCYLY</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #101</h2>
+        <p>Tags: <a href='../tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Suppose Quadratic Discriminant Analysis (QDA) is used to train a classifier on the following data set of <span class="math">\((x_i, y_i)\)</span> pairs, where <span class="math">\(x_i\)</span> is the feature and <span class="math">\(y_i\)</span> is the class label:</p>
+<center><div class="image"><img src="../images/101/table.png" /></div></center>
+<p>Univariate Gaussians are used to model the class conditional densities, each with their own mean and variance.</p>
+<p>What is the prediction of the QDA classifier at <span class="math">\(x = 2.25\)</span>?</p>
+<div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 0</p></label></div>
+<div class="choice"><label><input name="choice" class="choice" type="radio" /><p>Class 1</p></label></div></form></div>
+<details>
+    <summary>Solution</summary>
+<p>Class 0.</p>
+<p>Video explanation: https://youtu.be/5VxizVoBHsA</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #108</h2>
+        <p>Tags: <a href='../tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>The picture below shows the decision boundary of a binary classifier. The shaded region is where the classifier predicts for Class 1; everywhere else, the classifier predicts for Class 0.</p>
+<center><div class="image"><img src="../images/108/fig.png" /></div></center>
+<p>True or False: this could be the decision boundary of a Quadratic Discriminant Analysis (QDA) classifier that models the class-conditional densities as multivariate Gaussians with full covariance matrices.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False. Video explanation: https://youtu.be/fQm3_JcpVys</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #121</h2>
+        <p>Tags: <a href='../tags/linear and quadratic discriminant analysis.html'>linear and quadratic discriminant analysis</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>The picture below shows the decision boundary of a binary classifier. The shaded region is where the classifier predicts for Class 1; everywhere else, the classifier predicts for Class 0. You can assume that the shaded region extends infinitely to the left and down.</p>
+<center><div class="image"><img src="../images/121/fig.png" /></div></center>
+<p>True or False: this could be the decision boundary of a classifier that estimates each class conditional density using two Gaussians with different means but the same, shared full covariance matrix, and applies the Bayes classification rule.</p>
+
+<div class="true-false">
+    <input type="radio" name="true-false" value="true" /> True
+    <input type="radio" name="true-false" value="false" /> False
+</div>
+
+<details>
+    <summary>Solution</summary>
+<p>False.</p>
+</details>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

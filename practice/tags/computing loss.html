@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../practice.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex: {
+              inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+              displayMath: [             // start/end delimiter pairs for display math
+                  ['\\[', '\\]']
+              ],
+              processEscapes: true
+            }
+          });
+        </script>
+
+        \(
+
+        \newcommand{\nvec}[2]{\vec{#1}^{(#2)}}
+
+        \newcommand{\Aug}{\operatorname{Aug}}
+
+        \newcommand{\given}{\,|\,}
+
+        \newcommand{\pr}{\mathbb{P}}
+
+        \)
+
+        <!-- highlightjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../practice/"><span class="">🎯 Practice</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G57D95F40"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/759075"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+                        
+<h1>Problems tagged with "computing loss"</h1>
+
+
+        <div class="problem-outer">
+        <h2>Problem #007</h2>
+        <p>Tags: <a href='../tags/computing loss.html'>computing loss</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set shown below. The ``<span class="math">\(\times\)</span>'' points have label +1, while the ``o'' points have label -1. Shown are the places where a linear prediction function <span class="math">\(H\)</span> is equal to zero, 1, and -1.</p>
+<center><div class="image"><img src="../images/007/data.png" /></div></center>
+<p>For each of the below subproblems, calculate the <b>total</b> loss with respect to the given loss function. That is, you should calculate <span class="math">\(\sum_{i=1}^n L(\nvec{x}{i}, y_i, \vec w)\)</span> using the appropriate loss function in place of <span class="math">\(L\)</span>. Note that we have most often calculated the <i>mean</i> loss, but here we calculate the <i>total</i> so that we encounter fewer fractions.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the <b>total</b> square loss of <span class="math">\(H\)</span> on this data set?</p>
+<details>
+    <summary>Solution</summary>
+<p>17</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the <b>total</b> perceptron loss of <span class="math">\(H\)</span> on this data set?</p>
+<details>
+    <summary>Solution</summary>
+<p>3</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>What is the <b>total</b> hinge loss of <span class="math">\(H\)</span> on this data set?</p>
+<details>
+    <summary>Solution</summary>
+<p>7</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #024</h2>
+        <p>Tags: <a href='../tags/computing loss.html'>computing loss</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set shown below. The ``<span class="math">\(\times\)</span>'' points have label -1, while the ``<span class="math">\(\circ\)</span>'' points have label +1. Shown are the places where a linear prediction function <span class="math">\(H\)</span> is equal to zero (the thick solid line), 1, and -1 (the dotted lines). Each cell of the grid is 1 unit by 1 unit.</p>
+<center><div class="image"><img src="../images/024/data.png" /></div></center>
+<p>For each of the below subproblems, calculate the <b>total</b> loss with respect to the given loss function. That is, you should calculate <span class="math">\(\sum_{i=1}^n L(\nvec{x}{i}, y_i, \vec w)\)</span> using the appropriate loss function in place of <span class="math">\(L\)</span>. Note that we have most often calculated the <i>mean</i> loss, but here we calculate the <i>total</i> so that we encounter fewer fractions.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the <b>total</b> square loss of <span class="math">\(H\)</span> on this data set?</p>
+<details>
+    <summary>Solution</summary>
+<p>49</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the <b>total</b> perceptron loss of <span class="math">\(H\)</span> on this data set?</p>
+<details>
+    <summary>Solution</summary>
+<p>3</p>
+</details>
+
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>What is the <b>total</b> hinge loss of <span class="math">\(H\)</span> on this data set?</p>
+<details>
+    <summary>Solution</summary>
+<p>6</p>
+</details>
+
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #066</h2>
+        <p>Tags: <a href='../tags/computing loss.html'>computing loss</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set shown below. The 4 points marked with ``+'' have label +1, while the 3 ``<span class="math">\(\circ\)</span>'' points have label -1. Shown are the places where a linear prediction function <span class="math">\(H\)</span> is equal to zero (the thick solid line), 1, and -1 (the dotted lines). Each cell of the grid is 1 unit by 1 unit. The origin is not specified; it is not necessary to know the absolute coordinates of the data to complete this problem.</p>
+<center><div class="image"><img src="../images/066/data.png" /></div></center>
+<p>For each of the below subproblems, calculate the <b>total</b> loss with respect to the given loss function. That is, you should calculate <span class="math">\(\sum_{i=1}^n L(\nvec{x}{i}, y_i, \vec w)\)</span> using the appropriate loss function in place of <span class="math">\(L\)</span>. Note that we have most often calculated the <i>mean</i> loss, but here we calculate the <i>total</i> so that we encounter fewer fractions.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the <b>total</b><i>square</i> loss of <span class="math">\(H\)</span> on this data set?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-5ee1564c-3580-4244-bb7c-a6d8218341e5" style="display: none">11.25</span>
+    <span id="button-5ee1564c-3580-4244-bb7c-a6d8218341e5">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-5ee1564c-3580-4244-bb7c-a6d8218341e5').style.display = 'inline-block';
+                document.getElementById('button-5ee1564c-3580-4244-bb7c-a6d8218341e5').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the <b>total</b><i>perceptron</i> loss of <span class="math">\(H\)</span> on this data set?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e6954fc3-f63b-43f4-914a-22bb7fbaea51" style="display: none">1</span>
+    <span id="button-e6954fc3-f63b-43f4-914a-22bb7fbaea51">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e6954fc3-f63b-43f4-914a-22bb7fbaea51').style.display = 'inline-block';
+                document.getElementById('button-e6954fc3-f63b-43f4-914a-22bb7fbaea51').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>What is the <b>total</b><i>hinge</i> loss of <span class="math">\(H\)</span> on this data set?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-c0f6e12c-f924-4cf4-a948-0232c506668e" style="display: none">3.5</span>
+    <span id="button-c0f6e12c-f924-4cf4-a948-0232c506668e">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-c0f6e12c-f924-4cf4-a948-0232c506668e').style.display = 'inline-block';
+                document.getElementById('button-c0f6e12c-f924-4cf4-a948-0232c506668e').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+
+        <div class="problem-outer">
+        <h2>Problem #083</h2>
+        <p>Tags: <a href='../tags/computing loss.html'>computing loss</a></p>
+        <div class="problem">
+    <div class="problem-body">
+<p>Consider the data set shown below. The <span class="math">\(\diamond\)</span> points marked with ``+'' have label +1, while the <span class="math">\(\circ\)</span> points marked with ``<span class="math">\(-\)</span>'' have label -1. Shown are the places where a linear prediction function <span class="math">\(H\)</span> is equal to zero (the thick solid line), 1, and -1 (the dotted lines). Each cell of the grid is 1 unit by 1 unit. The origin is not specified; it is not necessary to know the absolute coordinates of the data to complete this problem.</p>
+<center><div class="image"><img src="../images/083/data.png" /></div></center>
+<p>For each of the below subproblems, calculate the <b>total</b> loss with respect to the given loss function. That is, you should calculate <span class="math">\(\sum_{i=1}^n L(\nvec{x}{i}, y_i, \vec w)\)</span> using the appropriate loss function in place of <span class="math">\(L\)</span>. Note that we have most often calculated the <i>mean</i> loss, but here we calculate the <i>total</i> so that we encounter fewer fractions.</p>
+<p><b>Note:</b> please double-check your calculations! We are not grading your work, so partial credit is difficult to assign on this problem.</p>
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 1)</h3>
+<p>What is the <b>total</b><i>square</i> loss of <span class="math">\(H\)</span> on this data set?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-69592397-c5e4-4700-9eb5-30014d7ecf0a" style="display: none">13.5</span>
+    <span id="button-69592397-c5e4-4700-9eb5-30014d7ecf0a">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-69592397-c5e4-4700-9eb5-30014d7ecf0a').style.display = 'inline-block';
+                document.getElementById('button-69592397-c5e4-4700-9eb5-30014d7ecf0a').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 2)</h3>
+<p>What is the <b>total</b><i>perceptron</i> loss of <span class="math">\(H\)</span> on this data set?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-e4da7959-89fe-4079-80ea-03c071f463e4" style="display: none">1.5</span>
+    <span id="button-e4da7959-89fe-4079-80ea-03c071f463e4">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-e4da7959-89fe-4079-80ea-03c071f463e4').style.display = 'inline-block';
+                document.getElementById('button-e4da7959-89fe-4079-80ea-03c071f463e4').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+<div class="subproblem">
+    <h3 class="subproblem-id">Part 3)</h3>
+<p>What is the <b>total</b><i>hinge</i> loss of <span class="math">\(H\)</span> on this data set?</p>
+<p>
+<span class="inline-response-box">
+    <span id="answer-1b0fa2c0-b5f3-4ed1-9165-c09e1cac9d61" style="display: none">4</span>
+    <span id="button-1b0fa2c0-b5f3-4ed1-9165-c09e1cac9d61">
+        <button
+            type="button"
+            onclick="
+                document.getElementById('answer-1b0fa2c0-b5f3-4ed1-9165-c09e1cac9d61').style.display = 'inline-block';
+                document.getElementById('button-1b0fa2c0-b5f3-4ed1-9165-c09e1cac9d61').style.display = 'none'
+            "
+        >
+            Show Answer
+        </button>
+    </span>
+</span>
+</p>
+</div>
+
+    </div>
+</div>
+
+        </div>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>
