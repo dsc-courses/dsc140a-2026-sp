@@ -198,11 +198,33 @@
                         }
                     }
                 },
+                "Lec2": {
+                    "metadata": {
+                        "date": "2026-04-01",
+                        "topic": "kNN and ERM",
+                        "number": 2,
+                        "videos": [
+                            {
+                                "title": "Derivation of Least Squares",
+                                "url": "https://youtu.be/igem__kz0C4"
+                            },
+                            {
+                                "title": "From Theory to Practice",
+                                "url": "https://youtu.be/acXJUpiWxYE"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec2/slides.pdf"
+                        }
+                    }
+                },
                 "xx-neural_networks": {
                     "metadata": {
-                        "date": "2026-03-31",
+                        "date": "2026-04-07",
                         "topic": "Neural Networks",
-                        "number": 2,
+                        "number": 3,
                         "videos": null
                     },
                     "artifacts": {}
@@ -241,10 +263,17 @@
                     "metadata": {
                         "due": "2026-04-08 23:59:00",
                         "released": "2026-04-02 00:00:00",
-                        "topic": "Nearest Neighbors and Linear Regression",
+                        "topic": "kNN, Least Squares, and gradients",
                         "number": 1
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/01-nearest_neighbor_and_least_squares/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/01-nearest_neighbor_and_least_squares/template.zip"
+                        }
+                    }
                 },
                 "02-linear_models_and_gradient": {
                     "metadata": {
