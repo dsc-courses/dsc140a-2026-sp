@@ -40,6 +40,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/01-gradient/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/01-gradient/solution.pdf"
                         }
                     }
                 },
@@ -202,7 +205,19 @@
                     "metadata": {
                         "date": "2026-04-01",
                         "topic": "kNN and ERM",
-                        "number": 2,
+                        "number": 2
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec2/slides.pdf"
+                        }
+                    }
+                },
+                "Lec3": {
+                    "metadata": {
+                        "date": "2026-04-03",
+                        "topic": "ERM and Least Squares",
+                        "number": 3,
                         "videos": [
                             {
                                 "title": "Derivation of Least Squares",
@@ -214,17 +229,13 @@
                             }
                         ]
                     },
-                    "artifacts": {
-                        "slides.pdf": {
-                            "path": "lectures/Lec2/slides.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "xx-neural_networks": {
                     "metadata": {
                         "date": "2026-04-07",
                         "topic": "Neural Networks",
-                        "number": 3,
+                        "number": 4,
                         "videos": null
                     },
                     "artifacts": {}
