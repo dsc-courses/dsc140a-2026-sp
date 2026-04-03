@@ -229,13 +229,25 @@
                             }
                         ]
                     },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec3/slides.pdf"
+                        }
+                    }
+                },
+                "Lec4": {
+                    "metadata": {
+                        "date": "2026-04-06",
+                        "topic": "ERM and Least Squares",
+                        "number": 4
+                    },
                     "artifacts": {}
                 },
                 "xx-neural_networks": {
                     "metadata": {
                         "date": "2026-04-07",
                         "topic": "Neural Networks",
-                        "number": 4,
+                        "number": 5,
                         "videos": null
                     },
                     "artifacts": {}
