@@ -205,7 +205,17 @@
                     "metadata": {
                         "date": "2026-04-01",
                         "topic": "ERM and least squares",
-                        "number": 2
+                        "number": 2,
+                        "videos": [
+                            {
+                                "title": "Derivation of Least Squares",
+                                "url": "https://youtu.be/igem__kz0C4"
+                            },
+                            {
+                                "title": "From Theory to Practice",
+                                "url": "https://youtu.be/acXJUpiWxYE"
+                            }
+                        ]
                     },
                     "artifacts": {
                         "slides.pdf": {
@@ -217,17 +227,7 @@
                     "metadata": {
                         "date": "2026-04-06",
                         "topic": "ERM and gradient descent",
-                        "number": 3,
-                        "videos": [
-                            {
-                                "title": "Derivation of Least Squares",
-                                "url": "https://youtu.be/igem__kz0C4"
-                            },
-                            {
-                                "title": "From Theory to Practice",
-                                "url": "https://youtu.be/acXJUpiWxYE"
-                            }
-                        ]
+                        "number": 3
                     },
                     "artifacts": {
                         "slides.pdf": {
