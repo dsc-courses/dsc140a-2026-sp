@@ -204,7 +204,7 @@
                 "Lec2": {
                     "metadata": {
                         "date": "2026-04-01",
-                        "topic": "kNN and ERM",
+                        "topic": "ERM and least squares",
                         "number": 2
                     },
                     "artifacts": {
@@ -215,8 +215,8 @@
                 },
                 "Lec3": {
                     "metadata": {
-                        "date": "2026-04-03",
-                        "topic": "ERM and Least Squares",
+                        "date": "2026-04-06",
+                        "topic": "ERM and gradient descent",
                         "number": 3,
                         "videos": [
                             {
@@ -237,15 +237,15 @@
                 },
                 "Lec4": {
                     "metadata": {
-                        "date": "2026-04-06",
-                        "topic": "ERM and Least Squares",
+                        "date": "2026-04-08",
+                        "topic": "Gradient descent",
                         "number": 4
                     },
                     "artifacts": {}
                 },
                 "xx-neural_networks": {
                     "metadata": {
-                        "date": "2026-04-07",
+                        "date": "2026-04-14",
                         "topic": "Neural Networks",
                         "number": 5,
                         "videos": null
