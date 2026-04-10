@@ -241,7 +241,11 @@
                         "topic": "Gradient descent",
                         "number": 4
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec4/slides.pdf"
+                        }
+                    }
                 },
                 "xx-neural_networks": {
                     "metadata": {
