@@ -258,6 +258,134 @@
                 }
             }
         },
+        "labs": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [
+                    "lab.md",
+                    "lab.html",
+                    "fig"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01": {
+                    "metadata": {
+                        "released": "2026-03-30 12:00:00",
+                        "topic": "Nearest Neighbor and Regression",
+                        "ready": true,
+                        "number": 1
+                    },
+                    "artifacts": {
+                        "lab.html": {
+                            "path": "labs/01/lab.html"
+                        }
+                    }
+                },
+                "02-gradient_descent": {
+                    "metadata": {
+                        "released": "2026-04-06 12:00:00",
+                        "topic": "Gradient Descent",
+                        "ready": true,
+                        "number": 2
+                    },
+                    "artifacts": {
+                        "lab.html": {
+                            "path": "labs/02-gradient_descent/lab.html"
+                        }
+                    }
+                },
+                "03-convexity_and_linear_classifiers": {
+                    "metadata": {
+                        "released": "2026-04-13 12:00:00",
+                        "topic": "Convexity and Linear Classification",
+                        "ready": false,
+                        "number": 3
+                    },
+                    "artifacts": {}
+                },
+                "04-svms_and_feature_maps": {
+                    "metadata": {
+                        "released": "2026-04-20 12:00:00",
+                        "topic": "SVMs and Feature Maps",
+                        "ready": false,
+                        "number": 4
+                    },
+                    "artifacts": {}
+                },
+                "05-regularization": {
+                    "metadata": {
+                        "released": "2026-04-27 12:00:00",
+                        "topic": "Regularization",
+                        "ready": false,
+                        "number": 5
+                    },
+                    "artifacts": {}
+                },
+                "06-kernels_and_probabilistic_models": {
+                    "metadata": {
+                        "released": "2026-05-04 12:00:00",
+                        "topic": "Kernels and Probabilistic Modeling",
+                        "ready": false,
+                        "number": 6
+                    },
+                    "artifacts": {}
+                },
+                "07-density_estimation_and_mle": {
+                    "metadata": {
+                        "released": "2026-05-11 12:00:00",
+                        "topic": "Maximum Likelihood Estimation",
+                        "ready": false,
+                        "number": 7
+                    },
+                    "artifacts": {}
+                },
+                "08-mv_gaussians-nb": {
+                    "metadata": {
+                        "released": "2026-05-18 12:00:00",
+                        "topic": "Multivariate Guassians and Naive Bayes",
+                        "ready": false,
+                        "number": 8
+                    },
+                    "artifacts": {}
+                },
+                "09-decision_trees": {
+                    "metadata": {
+                        "released": "2026-05-25 12:00:00",
+                        "topic": "Decision Trees",
+                        "ready": false,
+                        "number": 9
+                    },
+                    "artifacts": {}
+                },
+                "xx-kernels": {
+                    "metadata": {
+                        "released": "2026-06-01 12:00:00",
+                        "topic": "Kernels",
+                        "ready": false,
+                        "number": 10
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
         "homeworks": {
             "publication_schema": {
                 "required_artifacts": [
