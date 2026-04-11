@@ -264,7 +264,7 @@
                 "optional_artifacts": [
                     "lab.md",
                     "lab.html",
-                    "fig"
+                    "lab.pdf"
                 ],
                 "metadata_schema": {
                     "required_keys": {
@@ -294,8 +294,8 @@
                         "number": 1
                     },
                     "artifacts": {
-                        "lab.html": {
-                            "path": "labs/01/lab.html"
+                        "lab.pdf": {
+                            "path": "labs/01/lab.pdf"
                         }
                     }
                 },
@@ -307,8 +307,8 @@
                         "number": 2
                     },
                     "artifacts": {
-                        "lab.html": {
-                            "path": "labs/02-gradient_descent/lab.html"
+                        "lab.pdf": {
+                            "path": "labs/02-gradient_descent/lab.pdf"
                         }
                     }
                 },
