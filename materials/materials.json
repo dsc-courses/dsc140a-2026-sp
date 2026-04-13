@@ -262,15 +262,6 @@
                             "path": "lectures/Lec5/slides.pdf"
                         }
                     }
-                },
-                "xx-neural_networks": {
-                    "metadata": {
-                        "date": "2026-04-14",
-                        "topic": "Neural Networks",
-                        "number": 6,
-                        "videos": null
-                    },
-                    "artifacts": {}
                 }
             }
         },
