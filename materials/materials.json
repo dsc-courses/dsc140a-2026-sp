@@ -251,11 +251,23 @@
                         }
                     }
                 },
+                "Lec5": {
+                    "metadata": {
+                        "date": "2026-04-13",
+                        "topic": "Subgradient descent and convexity",
+                        "number": 5
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec5/slides.pdf"
+                        }
+                    }
+                },
                 "xx-neural_networks": {
                     "metadata": {
                         "date": "2026-04-14",
                         "topic": "Neural Networks",
-                        "number": 5,
+                        "number": 6,
                         "videos": null
                     },
                     "artifacts": {}
