@@ -48,15 +48,19 @@
                 },
                 "02-gradient_descent": {
                     "metadata": {
-                        "date": "2026-04-06",
+                        "date": "2026-04-13",
                         "topic": "Stochastic Gradient Descent",
                         "number": 2
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/02-gradient_descent/discussion.pdf"
+                        }
+                    }
                 },
                 "03-convexity": {
                     "metadata": {
-                        "date": "2026-04-13",
+                        "date": "2026-04-20",
                         "topic": "Subgradients and Convexity",
                         "number": 3,
                         "recording": null
@@ -65,7 +69,7 @@
                 },
                 "04-midterm_01_review": {
                     "metadata": {
-                        "date": "2026-04-20",
+                        "date": "2026-04-27",
                         "topic": "Midterm 01 review",
                         "number": 4
                     },
@@ -73,7 +77,7 @@
                 },
                 "05-regularization": {
                     "metadata": {
-                        "date": "2026-04-27",
+                        "date": "2026-05-04",
                         "topic": "Regularization",
                         "number": 5,
                         "recording": null
@@ -82,7 +86,7 @@
                 },
                 "06-kernels": {
                     "metadata": {
-                        "date": "2026-05-04",
+                        "date": "2026-05-11",
                         "topic": "Kernels",
                         "number": 6,
                         "recording": null
@@ -91,7 +95,7 @@
                 },
                 "07-probabilistic_modeling": {
                     "metadata": {
-                        "date": "2026-05-11",
+                        "date": "2026-05-18",
                         "topic": "Probabilistic Modeling",
                         "number": 7,
                         "recording": null
@@ -100,7 +104,7 @@
                 },
                 "08-mt02-review": {
                     "metadata": {
-                        "date": "2026-05-18",
+                        "date": "2026-05-25",
                         "topic": "Midterm 02 Review",
                         "number": 8,
                         "recording": null
@@ -109,7 +113,7 @@
                 },
                 "09-multivariate-gaussians": {
                     "metadata": {
-                        "date": "2026-05-25",
+                        "date": "2026-06-01",
                         "topic": "Bayes Classifiers",
                         "number": 9,
                         "recording": null
@@ -118,7 +122,7 @@
                 },
                 "10-decision_trees": {
                     "metadata": {
-                        "date": "2026-05-29",
+                        "date": "2026-06-05",
                         "topic": "Decision Trees",
                         "number": 10,
                         "recording": null
@@ -127,7 +131,7 @@
                 },
                 "xx-redemption_exam_review": {
                     "metadata": {
-                        "date": "2026-06-05",
+                        "date": "2026-06-12",
                         "topic": "Midterm 02 Review",
                         "number": 11,
                         "recording": null
@@ -136,7 +140,7 @@
                 },
                 "xx-subgradients": {
                     "metadata": {
-                        "date": "2026-06-12",
+                        "date": "2026-06-19",
                         "topic": "Gradient Descent and Subgradients",
                         "number": 12
                     },
@@ -316,37 +320,53 @@
                     "metadata": {
                         "released": "2026-04-13 12:00:00",
                         "topic": "Convexity and Linear Classification",
-                        "ready": false,
+                        "ready": true,
                         "number": 3
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/03-convexity_and_linear_classifiers/lab.pdf"
+                        }
+                    }
                 },
                 "04-svms_and_feature_maps": {
                     "metadata": {
                         "released": "2026-04-20 12:00:00",
                         "topic": "SVMs and Feature Maps",
-                        "ready": false,
+                        "ready": true,
                         "number": 4
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/04-svms_and_feature_maps/lab.pdf"
+                        }
+                    }
                 },
                 "05-regularization": {
                     "metadata": {
                         "released": "2026-04-27 12:00:00",
                         "topic": "Regularization",
-                        "ready": false,
+                        "ready": true,
                         "number": 5
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/05-regularization/lab.pdf"
+                        }
+                    }
                 },
                 "06-kernels_and_probabilistic_models": {
                     "metadata": {
                         "released": "2026-05-04 12:00:00",
                         "topic": "Kernels and Probabilistic Modeling",
-                        "ready": false,
+                        "ready": true,
                         "number": 6
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/06-kernels_and_probabilistic_models/lab.pdf"
+                        }
+                    }
                 },
                 "07-density_estimation_and_mle": {
                     "metadata": {
@@ -508,6 +528,47 @@
                         "number": 9
                     },
                     "artifacts": {}
+                }
+            }
+        },
+        "quizzes": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [
+                    "quiz.pdf"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-gradient_knn": {
+                    "metadata": {
+                        "released": "2026-04-15 00:00:00+00:00",
+                        "topic": "Least Squares",
+                        "ready": false,
+                        "number": 1
+                    },
+                    "artifacts": {
+                        "quiz.pdf": {
+                            "path": "quizzes/01-gradient_knn/quiz.pdf"
+                        }
+                    }
                 }
             }
         },
