@@ -55,6 +55,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/02-gradient_descent/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/02-gradient_descent/solution.pdf"
                         }
                     }
                 },
@@ -567,7 +570,11 @@
                         "ready": true,
                         "number": 1
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "quiz.pdf": {
+                            "path": "quizzes/01-gradient_knn/quiz.pdf"
+                        }
+                    }
                 }
             }
         },
