@@ -283,6 +283,15 @@
                             "path": "lectures/Lec6/slides.pdf"
                         }
                     }
+                },
+                "Lec7": {
+                    "metadata": {
+                        "date": "2026-04-20",
+                        "topic": "SVMs",
+                        "number": 7,
+                        "videos": null
+                    },
+                    "artifacts": {}
                 }
             }
         },
@@ -396,7 +405,7 @@
                     "metadata": {
                         "released": "2026-05-11 12:00:00",
                         "topic": "Maximum Likelihood Estimation",
-                        "ready": false,
+                        "ready": true,
                         "number": 7
                     },
                     "artifacts": {}
@@ -405,7 +414,7 @@
                     "metadata": {
                         "released": "2026-05-18 12:00:00",
                         "topic": "Multivariate Guassians and Naive Bayes",
-                        "ready": false,
+                        "ready": true,
                         "number": 8
                     },
                     "artifacts": {}
@@ -414,7 +423,7 @@
                     "metadata": {
                         "released": "2026-05-25 12:00:00",
                         "topic": "Decision Trees",
-                        "ready": false,
+                        "ready": true,
                         "number": 9
                     },
                     "artifacts": {}
@@ -423,7 +432,7 @@
                     "metadata": {
                         "released": "2026-06-01 12:00:00",
                         "topic": "Kernels",
-                        "ready": false,
+                        "ready": true,
                         "number": 10
                     },
                     "artifacts": {}
