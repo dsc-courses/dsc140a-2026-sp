@@ -265,6 +265,24 @@
                             "path": "lectures/Lec5/slides.pdf"
                         }
                     }
+                },
+                "Lec6": {
+                    "metadata": {
+                        "date": "2026-04-15",
+                        "topic": "Convexity and Linear Classifiers",
+                        "number": 6,
+                        "videos": [
+                            {
+                                "title": "Perceptron Loss",
+                                "url": "https://youtu.be/j7cN1PMBwEg"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec6/slides.pdf"
+                        }
+                    }
                 }
             }
         },
@@ -479,7 +497,14 @@
                         "topic": "Convexity and Perceptrons",
                         "number": 3
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/03-convexity_and_classification/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/03-convexity_and_classification/template.zip"
+                        }
+                    }
                 },
                 "04-svm_and_feature_maps": {
                     "metadata": {
