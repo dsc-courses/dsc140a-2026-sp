@@ -291,6 +291,19 @@
                         "number": 7,
                         "videos": null
                     },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec7/slides.pdf"
+                        }
+                    }
+                },
+                "Lec8": {
+                    "metadata": {
+                        "date": "2026-04-22",
+                        "topic": "Feature Maps",
+                        "number": 8,
+                        "videos": null
+                    },
                     "artifacts": {}
                 }
             }
