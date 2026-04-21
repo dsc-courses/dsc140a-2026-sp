@@ -304,7 +304,11 @@
                         "number": 8,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec8/slides.pdf"
+                        }
+                    }
                 }
             }
         },
