@@ -495,6 +495,9 @@
                         "homework.pdf": {
                             "path": "homeworks/01-nearest_neighbor_and_least_squares/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/01-nearest_neighbor_and_least_squares/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/01-nearest_neighbor_and_least_squares/template.zip"
                         }
@@ -510,6 +513,9 @@
                     "artifacts": {
                         "homework.pdf": {
                             "path": "homeworks/02-linear_models_and_gradient/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/02-linear_models_and_gradient/solution.pdf"
                         },
                         "template.zip": {
                             "path": "homeworks/02-linear_models_and_gradient/template.zip"
@@ -539,7 +545,14 @@
                         "topic": "SVMs and Feature Maps",
                         "number": 4
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/04-svm_and_feature_maps/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/04-svm_and_feature_maps/template.zip"
+                        }
+                    }
                 },
                 "05-regularization": {
                     "metadata": {
