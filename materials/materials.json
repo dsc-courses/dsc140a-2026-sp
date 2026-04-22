@@ -309,6 +309,19 @@
                             "path": "lectures/Lec8/slides.pdf"
                         }
                     }
+                },
+                "Lec9": {
+                    "metadata": {
+                        "date": "2026-04-27",
+                        "topic": "Regularization",
+                        "number": 9,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec9/slides.pdf"
+                        }
+                    }
                 }
             }
         },
