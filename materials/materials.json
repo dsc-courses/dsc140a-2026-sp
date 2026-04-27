@@ -63,7 +63,7 @@
                 },
                 "03-convexity": {
                     "metadata": {
-                        "date": "2026-04-20",
+                        "date": "2026-05-04",
                         "topic": "Subgradients and Convexity",
                         "number": 3,
                         "recording": null
@@ -72,7 +72,7 @@
                 },
                 "04-midterm_01_review": {
                     "metadata": {
-                        "date": "2026-04-27",
+                        "date": "2026-05-11",
                         "topic": "Midterm 01 review",
                         "number": 4
                     },
@@ -80,7 +80,7 @@
                 },
                 "05-regularization": {
                     "metadata": {
-                        "date": "2026-05-04",
+                        "date": "2026-05-18",
                         "topic": "Regularization",
                         "number": 5,
                         "recording": null
@@ -89,7 +89,7 @@
                 },
                 "06-kernels": {
                     "metadata": {
-                        "date": "2026-05-11",
+                        "date": "2026-05-25",
                         "topic": "Kernels",
                         "number": 6,
                         "recording": null
@@ -98,7 +98,7 @@
                 },
                 "07-probabilistic_modeling": {
                     "metadata": {
-                        "date": "2026-05-18",
+                        "date": "2026-06-01",
                         "topic": "Probabilistic Modeling",
                         "number": 7,
                         "recording": null
@@ -107,7 +107,7 @@
                 },
                 "08-mt02-review": {
                     "metadata": {
-                        "date": "2026-05-25",
+                        "date": "2026-06-08",
                         "topic": "Midterm 02 Review",
                         "number": 8,
                         "recording": null
@@ -116,7 +116,7 @@
                 },
                 "09-multivariate-gaussians": {
                     "metadata": {
-                        "date": "2026-06-01",
+                        "date": "2026-06-15",
                         "topic": "Bayes Classifiers",
                         "number": 9,
                         "recording": null
@@ -125,7 +125,7 @@
                 },
                 "10-decision_trees": {
                     "metadata": {
-                        "date": "2026-06-05",
+                        "date": "2026-06-19",
                         "topic": "Decision Trees",
                         "number": 10,
                         "recording": null
@@ -134,7 +134,7 @@
                 },
                 "xx-redemption_exam_review": {
                     "metadata": {
-                        "date": "2026-06-12",
+                        "date": "2026-06-26",
                         "topic": "Midterm 02 Review",
                         "number": 11,
                         "recording": null
@@ -143,7 +143,7 @@
                 },
                 "xx-subgradients": {
                     "metadata": {
-                        "date": "2026-06-19",
+                        "date": "2026-07-03",
                         "topic": "Gradient Descent and Subgradients",
                         "number": 12
                     },
@@ -663,6 +663,19 @@
                     "artifacts": {
                         "quiz.pdf": {
                             "path": "quizzes/01-gradient_knn/quiz.pdf"
+                        }
+                    }
+                },
+                "02-gd_convexity": {
+                    "metadata": {
+                        "date": "2026-04-20",
+                        "topic": "Convexity and gradient descent",
+                        "ready": true,
+                        "number": 2
+                    },
+                    "artifacts": {
+                        "quiz.pdf": {
+                            "path": "quizzes/02-gd_convexity/quiz.pdf"
                         }
                     }
                 }
