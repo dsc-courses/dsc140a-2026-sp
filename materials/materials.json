@@ -196,7 +196,7 @@
                 "is_ordered": true
             },
             "publications": {
-                "Lec1": {
+                "Lec01": {
                     "metadata": {
                         "date": "2026-03-30",
                         "topic": "Introduction: Nearest Neighbors",
@@ -204,11 +204,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec1/slides.pdf"
+                            "path": "lectures/Lec01/slides.pdf"
                         }
                     }
                 },
-                "Lec2": {
+                "Lec02": {
                     "metadata": {
                         "date": "2026-04-01",
                         "topic": "ERM and least squares",
@@ -226,11 +226,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec2/slides.pdf"
+                            "path": "lectures/Lec02/slides.pdf"
                         }
                     }
                 },
-                "Lec3": {
+                "Lec03": {
                     "metadata": {
                         "date": "2026-04-06",
                         "topic": "ERM and gradient descent",
@@ -238,11 +238,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec3/slides.pdf"
+                            "path": "lectures/Lec03/slides.pdf"
                         }
                     }
                 },
-                "Lec4": {
+                "Lec04": {
                     "metadata": {
                         "date": "2026-04-08",
                         "topic": "Gradient descent",
@@ -250,11 +250,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec4/slides.pdf"
+                            "path": "lectures/Lec04/slides.pdf"
                         }
                     }
                 },
-                "Lec5": {
+                "Lec05": {
                     "metadata": {
                         "date": "2026-04-13",
                         "topic": "Subgradient descent and convexity",
@@ -262,11 +262,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec5/slides.pdf"
+                            "path": "lectures/Lec05/slides.pdf"
                         }
                     }
                 },
-                "Lec6": {
+                "Lec06": {
                     "metadata": {
                         "date": "2026-04-15",
                         "topic": "Convexity and Linear Classifiers",
@@ -280,11 +280,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec6/slides.pdf"
+                            "path": "lectures/Lec06/slides.pdf"
                         }
                     }
                 },
-                "Lec7": {
+                "Lec07": {
                     "metadata": {
                         "date": "2026-04-20",
                         "topic": "SVMs",
@@ -293,11 +293,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec7/slides.pdf"
+                            "path": "lectures/Lec07/slides.pdf"
                         }
                     }
                 },
-                "Lec8": {
+                "Lec08": {
                     "metadata": {
                         "date": "2026-04-22",
                         "topic": "Feature Maps",
@@ -306,11 +306,11 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec8/slides.pdf"
+                            "path": "lectures/Lec08/slides.pdf"
                         }
                     }
                 },
-                "Lec9": {
+                "Lec09": {
                     "metadata": {
                         "date": "2026-04-24",
                         "topic": "Regularization",
@@ -319,7 +319,20 @@
                     },
                     "artifacts": {
                         "slides.pdf": {
-                            "path": "lectures/Lec9/slides.pdf"
+                            "path": "lectures/Lec09/slides.pdf"
+                        }
+                    }
+                },
+                "Lec10": {
+                    "metadata": {
+                        "date": "2026-04-27",
+                        "topic": "Kernels",
+                        "number": 10,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec10/slides.pdf"
                         }
                     }
                 }
