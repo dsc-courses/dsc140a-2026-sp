@@ -587,7 +587,14 @@
                         "topic": "Regularization",
                         "number": 5
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/05-regularization/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/05-regularization/template.zip"
+                        }
+                    }
                 },
                 "06-kernels_and_bayes": {
                     "metadata": {
