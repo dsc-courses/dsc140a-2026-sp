@@ -335,6 +335,24 @@
                             "path": "lectures/Lec10/slides.pdf"
                         }
                     }
+                },
+                "Lec11": {
+                    "metadata": {
+                        "date": "2026-04-29",
+                        "topic": "Bayes Decision Theory",
+                        "number": 11,
+                        "videos": [
+                            {
+                                "title": "Exercise: Computing Bayes Error",
+                                "url": "https://youtu.be/YrYirKHrxyo"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec11/slides.pdf"
+                        }
+                    }
                 }
             }
         },
