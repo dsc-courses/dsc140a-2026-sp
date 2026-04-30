@@ -72,80 +72,84 @@
                 },
                 "04-midterm_01_review": {
                     "metadata": {
-                        "date": "2026-05-11",
-                        "topic": "Midterm 01 review",
-                        "number": 4
+                        "date": "2026-04-29",
+                        "topic": "Midterm review",
+                        "number": 3
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/04-midterm_01_review/discussion.pdf"
+                        }
+                    }
                 },
                 "05-regularization": {
                     "metadata": {
-                        "date": "2026-05-18",
+                        "date": "2026-05-06",
                         "topic": "Regularization",
-                        "number": 5,
+                        "number": 4,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "06-kernels": {
                     "metadata": {
-                        "date": "2026-05-25",
+                        "date": "2026-05-13",
                         "topic": "Kernels",
-                        "number": 6,
+                        "number": 5,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "07-probabilistic_modeling": {
                     "metadata": {
-                        "date": "2026-06-01",
+                        "date": "2026-05-20",
                         "topic": "Probabilistic Modeling",
-                        "number": 7,
+                        "number": 6,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "08-mt02-review": {
                     "metadata": {
-                        "date": "2026-06-08",
+                        "date": "2026-05-27",
                         "topic": "Midterm 02 Review",
-                        "number": 8,
+                        "number": 7,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "09-multivariate-gaussians": {
                     "metadata": {
-                        "date": "2026-06-15",
+                        "date": "2026-06-03",
                         "topic": "Bayes Classifiers",
-                        "number": 9,
+                        "number": 8,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "10-decision_trees": {
                     "metadata": {
-                        "date": "2026-06-19",
+                        "date": "2026-06-05",
                         "topic": "Decision Trees",
-                        "number": 10,
+                        "number": 9,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "xx-redemption_exam_review": {
                     "metadata": {
-                        "date": "2026-06-26",
+                        "date": "2026-06-12",
                         "topic": "Midterm 02 Review",
-                        "number": 11,
+                        "number": 10,
                         "recording": null
                     },
                     "artifacts": {}
                 },
                 "xx-subgradients": {
                     "metadata": {
-                        "date": "2026-07-03",
+                        "date": "2026-06-19",
                         "topic": "Gradient Descent and Subgradients",
-                        "number": 12
+                        "number": 11
                     },
                     "artifacts": {}
                 }
