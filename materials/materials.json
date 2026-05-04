@@ -61,15 +61,6 @@
                         }
                     }
                 },
-                "03-convexity": {
-                    "metadata": {
-                        "date": "2026-05-04",
-                        "topic": "Subgradients and Convexity",
-                        "number": 3,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
                 "04-midterm_01_review": {
                     "metadata": {
                         "date": "2026-04-29",
@@ -584,6 +575,9 @@
                         "homework.pdf": {
                             "path": "homeworks/03-convexity_and_classification/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/03-convexity_and_classification/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/03-convexity_and_classification/template.zip"
                         }
@@ -599,6 +593,9 @@
                     "artifacts": {
                         "homework.pdf": {
                             "path": "homeworks/04-svm_and_feature_maps/homework.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "homeworks/04-svm_and_feature_maps/solution.pdf"
                         },
                         "template.zip": {
                             "path": "homeworks/04-svm_and_feature_maps/template.zip"
