@@ -351,6 +351,19 @@
                             "path": "lectures/Lec11/slides.pdf"
                         }
                     }
+                },
+                "Lec12": {
+                    "metadata": {
+                        "date": "2026-05-06",
+                        "topic": "Density Estimation",
+                        "number": 12,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec12/slides.pdf"
+                        }
+                    }
                 }
             }
         },
