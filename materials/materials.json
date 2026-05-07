@@ -63,7 +63,7 @@
                 },
                 "04-midterm_01_review": {
                     "metadata": {
-                        "date": "2026-04-29",
+                        "date": "2026-05-04",
                         "topic": "Midterm review",
                         "number": 3
                     },
@@ -78,7 +78,7 @@
                 },
                 "05-regularization": {
                     "metadata": {
-                        "date": "2026-05-06",
+                        "date": "2026-05-11",
                         "topic": "Regularization",
                         "number": 4,
                         "recording": null
@@ -87,7 +87,7 @@
                 },
                 "06-kernels": {
                     "metadata": {
-                        "date": "2026-05-13",
+                        "date": "2026-05-18",
                         "topic": "Kernels",
                         "number": 5,
                         "recording": null
@@ -96,7 +96,7 @@
                 },
                 "07-probabilistic_modeling": {
                     "metadata": {
-                        "date": "2026-05-20",
+                        "date": "2026-05-25",
                         "topic": "Probabilistic Modeling",
                         "number": 6,
                         "recording": null
@@ -105,7 +105,7 @@
                 },
                 "08-mt02-review": {
                     "metadata": {
-                        "date": "2026-05-27",
+                        "date": "2026-06-01",
                         "topic": "Midterm 02 Review",
                         "number": 7,
                         "recording": null
@@ -114,7 +114,7 @@
                 },
                 "09-multivariate-gaussians": {
                     "metadata": {
-                        "date": "2026-06-03",
+                        "date": "2026-06-08",
                         "topic": "Bayes Classifiers",
                         "number": 8,
                         "recording": null
@@ -123,7 +123,7 @@
                 },
                 "10-decision_trees": {
                     "metadata": {
-                        "date": "2026-06-05",
+                        "date": "2026-06-12",
                         "topic": "Decision Trees",
                         "number": 9,
                         "recording": null
@@ -132,7 +132,7 @@
                 },
                 "xx-redemption_exam_review": {
                     "metadata": {
-                        "date": "2026-06-12",
+                        "date": "2026-06-19",
                         "topic": "Midterm 02 Review",
                         "number": 10,
                         "recording": null
@@ -141,7 +141,7 @@
                 },
                 "xx-subgradients": {
                     "metadata": {
-                        "date": "2026-06-19",
+                        "date": "2026-06-26",
                         "topic": "Gradient Descent and Subgradients",
                         "number": 11
                     },
@@ -727,6 +727,15 @@
                             "path": "quizzes/02-gd_convexity/quiz.pdf"
                         }
                     }
+                },
+                "03-linear_classification": {
+                    "metadata": {
+                        "date": "2026-04-27",
+                        "topic": "Convexity and gradient descent",
+                        "ready": false,
+                        "number": 3
+                    },
+                    "artifacts": {}
                 }
             }
         },
