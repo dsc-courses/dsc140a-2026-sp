@@ -731,11 +731,15 @@
                 "03-linear_classification": {
                     "metadata": {
                         "date": "2026-04-27",
-                        "topic": "Convexity and gradient descent",
-                        "ready": false,
+                        "topic": "SVM and feature map",
+                        "ready": true,
                         "number": 3
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "quiz.pdf": {
+                            "path": "quizzes/03-linear_classification/quiz.pdf"
+                        }
+                    }
                 }
             }
         },
