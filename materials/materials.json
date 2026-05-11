@@ -225,6 +225,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec02/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec02/slides-marked.pdf"
                         }
                     }
                 },
@@ -237,6 +240,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec03/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec03/slides-marked.pdf"
                         }
                     }
                 },
@@ -249,6 +255,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec04/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec04/slides-marked.pdf"
                         }
                     }
                 },
@@ -261,6 +270,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec05/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec05/slides-marked.pdf"
                         }
                     }
                 },
@@ -279,6 +291,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec06/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec06/slides-marked.pdf"
                         }
                     }
                 },
@@ -292,6 +307,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec07/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec07/slides-marked.pdf"
                         }
                     }
                 },
@@ -305,6 +323,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec08/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec08/slides-marked.pdf"
                         }
                     }
                 },
@@ -318,6 +339,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec09/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec09/slides-marked.pdf"
                         }
                     }
                 },
@@ -331,6 +355,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec10/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec10/slides-marked.pdf"
                         }
                     }
                 },
@@ -349,12 +376,15 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec11/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/Lec11/slides-marked.pdf"
                         }
                     }
                 },
                 "Lec12": {
                     "metadata": {
-                        "date": "2026-05-06",
+                        "date": "2026-05-11",
                         "topic": "Density Estimation",
                         "number": 12,
                         "videos": null
@@ -362,6 +392,19 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec12/slides.pdf"
+                        }
+                    }
+                },
+                "Lec13": {
+                    "metadata": {
+                        "date": "2026-05-13",
+                        "topic": "Maximum Likelihood",
+                        "number": 13,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec13/slides.pdf"
                         }
                     }
                 }
