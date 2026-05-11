@@ -523,7 +523,11 @@
                         "ready": true,
                         "number": 7
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/07-density_estimation_and_mle/lab.pdf"
+                        }
+                    }
                 },
                 "08-mv_gaussians-nb": {
                     "metadata": {
@@ -532,7 +536,11 @@
                         "ready": true,
                         "number": 8
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/08-mv_gaussians-nb/lab.pdf"
+                        }
+                    }
                 },
                 "09-decision_trees": {
                     "metadata": {
@@ -541,7 +549,11 @@
                         "ready": true,
                         "number": 9
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "lab.pdf": {
+                            "path": "labs/09-decision_trees/lab.pdf"
+                        }
+                    }
                 },
                 "xx-kernels": {
                     "metadata": {
