@@ -681,6 +681,9 @@
                         "homework.pdf": {
                             "path": "homeworks/05-regularization/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/05-regularization/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/05-regularization/template.zip"
                         }
@@ -709,7 +712,14 @@
                         "topic": "Density Estimation",
                         "number": 7
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/07-mle/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/07-mle/template.zip"
+                        }
+                    }
                 },
                 "08-mv_gaussians_and_nb": {
                     "metadata": {
