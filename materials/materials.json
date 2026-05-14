@@ -566,6 +566,60 @@
                 }
             }
         },
+        "midterms": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [
+                    "exam.pdf"
+                ],
+                "metadata_schema": {
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "number": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "vA": {
+                    "metadata": {
+                        "date": "2026-05-08",
+                        "topic": "Midterm vA",
+                        "ready": true,
+                        "number": "A"
+                    },
+                    "artifacts": {
+                        "exam.pdf": {
+                            "path": "midterms/vA/exam.pdf"
+                        }
+                    }
+                },
+                "vB": {
+                    "metadata": {
+                        "date": "2026-05-08",
+                        "topic": "Midterm vB",
+                        "ready": true,
+                        "number": "B"
+                    },
+                    "artifacts": {
+                        "exam.pdf": {
+                            "path": "midterms/vB/exam.pdf"
+                        }
+                    }
+                }
+            }
+        },
         "homeworks": {
             "publication_schema": {
                 "required_artifacts": [
