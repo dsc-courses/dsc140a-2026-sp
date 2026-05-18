@@ -407,6 +407,19 @@
                             "path": "lectures/Lec13/slides.pdf"
                         }
                     }
+                },
+                "Lec14": {
+                    "metadata": {
+                        "date": "2026-05-15",
+                        "topic": "Multivariate Gaussians",
+                        "number": 14,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec14/slides.pdf"
+                        }
+                    }
                 }
             }
         },
