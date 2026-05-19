@@ -795,7 +795,14 @@
                         "topic": "Multivariate Gaussians and Naive Bayes",
                         "number": 8
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/08-mv_gaussians_and_nb/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/08-mv_gaussians_and_nb/template.zip"
+                        }
+                    }
                 },
                 "09-super_hw": {
                     "metadata": {
