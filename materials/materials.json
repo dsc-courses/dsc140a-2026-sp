@@ -420,6 +420,19 @@
                             "path": "lectures/Lec14/slides.pdf"
                         }
                     }
+                },
+                "Lec15": {
+                    "metadata": {
+                        "date": "2026-05-20",
+                        "topic": "Naive Bayes",
+                        "number": 15,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec15/slides.pdf"
+                        }
+                    }
                 }
             }
         },
