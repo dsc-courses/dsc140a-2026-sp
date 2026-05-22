@@ -433,6 +433,19 @@
                             "path": "lectures/Lec15/slides.pdf"
                         }
                     }
+                },
+                "Lec16": {
+                    "metadata": {
+                        "date": "2026-05-22",
+                        "topic": "Regression (Probabilistic View)",
+                        "number": 16,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec16/slides.pdf"
+                        }
+                    }
                 }
             }
         },
