@@ -916,7 +916,11 @@
                         "ready": true,
                         "number": 4
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "quiz.pdf": {
+                            "path": "quizzes/04-bayes_mle/quiz.pdf"
+                        }
+                    }
                 }
             }
         },
