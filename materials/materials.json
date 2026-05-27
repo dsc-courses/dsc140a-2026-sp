@@ -835,12 +835,19 @@
                 },
                 "09-super_hw": {
                     "metadata": {
-                        "due": "2025-03-19 23:59:00",
-                        "released": "2025-03-06 00:00:00",
-                        "topic": "Super Homework",
+                        "due": "2026-06-03 23:59:00",
+                        "released": "2026-05-28 00:00:00",
+                        "topic": "Regression and Decision Trees",
                         "number": 9
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/09-super_hw/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/09-super_hw/template.zip"
+                        }
+                    }
                 }
             }
         },
