@@ -812,6 +812,9 @@
                         "homework.pdf": {
                             "path": "homeworks/07-mle/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/07-mle/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/07-mle/template.zip"
                         }
