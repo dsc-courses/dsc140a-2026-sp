@@ -446,6 +446,19 @@
                             "path": "lectures/Lec16/slides.pdf"
                         }
                     }
+                },
+                "Lec17": {
+                    "metadata": {
+                        "date": "2026-05-29",
+                        "topic": "Decision Trees",
+                        "number": 17,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec17/slides.pdf"
+                        }
+                    }
                 }
             }
         },
