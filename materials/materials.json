@@ -76,74 +76,12 @@
                         }
                     }
                 },
-                "05-regularization": {
-                    "metadata": {
-                        "date": "2026-05-11",
-                        "topic": "Regularization",
-                        "number": 4,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "06-kernels": {
+                "05-final_review": {
                     "metadata": {
                         "date": "2026-06-01",
-                        "topic": "Kernels",
+                        "topic": "Final Review",
                         "number": 5,
                         "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "07-probabilistic_modeling": {
-                    "metadata": {
-                        "date": "2026-06-08",
-                        "topic": "Probabilistic Modeling",
-                        "number": 6,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "08-mt02-review": {
-                    "metadata": {
-                        "date": "2026-06-15",
-                        "topic": "Midterm 02 Review",
-                        "number": 7,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "09-multivariate-gaussians": {
-                    "metadata": {
-                        "date": "2026-06-22",
-                        "topic": "Bayes Classifiers",
-                        "number": 8,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "10-decision_trees": {
-                    "metadata": {
-                        "date": "2026-06-26",
-                        "topic": "Decision Trees",
-                        "number": 9,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "xx-redemption_exam_review": {
-                    "metadata": {
-                        "date": "2026-07-03",
-                        "topic": "Midterm 02 Review",
-                        "number": 10,
-                        "recording": null
-                    },
-                    "artifacts": {}
-                },
-                "xx-subgradients": {
-                    "metadata": {
-                        "date": "2026-07-10",
-                        "topic": "Gradient Descent and Subgradients",
-                        "number": 11
                     },
                     "artifacts": {}
                 }
@@ -449,7 +387,7 @@
                 },
                 "Lec17": {
                     "metadata": {
-                        "date": "2026-05-29",
+                        "date": "2026-06-01",
                         "topic": "Decision Trees",
                         "number": 17,
                         "videos": null
@@ -457,6 +395,19 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/Lec17/slides.pdf"
+                        }
+                    }
+                },
+                "Lec18": {
+                    "metadata": {
+                        "date": "2026-06-03",
+                        "topic": "Boosting",
+                        "number": 18,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/Lec18/slides.pdf"
                         }
                     }
                 }
