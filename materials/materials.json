@@ -86,6 +86,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/05-final_review/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/05-final_review/solution.pdf"
                         }
                     }
                 }
