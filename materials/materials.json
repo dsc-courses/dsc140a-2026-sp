@@ -83,7 +83,11 @@
                         "number": 5,
                         "recording": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/05-final_review/discussion.pdf"
+                        }
+                    }
                 }
             }
         },
