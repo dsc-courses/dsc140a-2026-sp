@@ -802,6 +802,9 @@
                         "homework.pdf": {
                             "path": "homeworks/08-mv_gaussians_and_nb/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/08-mv_gaussians_and_nb/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/08-mv_gaussians_and_nb/template.zip"
                         }
