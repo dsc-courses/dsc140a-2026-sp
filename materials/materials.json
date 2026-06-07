@@ -821,6 +821,9 @@
                         "homework.pdf": {
                             "path": "homeworks/09-super_hw/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/09-super_hw/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/09-super_hw/template.zip"
                         }
